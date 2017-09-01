@@ -138,10 +138,40 @@
 													<td id="iunits"></td>
 													<td id="ides"></td>
 												</tr>
+												<tr>
+												    <td id="iname"></td>
+													<td id="id"></td>
+													<td id="ope"></td>
+													<td id="imu"></td>
+													<td id="iman"></td>
+													<td id="itype"></td>
+													<td id="iran"></td>
+													<td id="iunits"></td>
+													<td id="ides"></td>
+												</tr>
+												<tr>
+												    <td id="iname"></td>
+													<td id="id"></td>
+													<td id="ope"></td>
+													<td id="imu"></td>
+													<td id="iman"></td>
+													<td id="itype"></td>
+													<td id="iran"></td>
+													<td id="iunits"></td>
+													<td id="ides"></td>
+												</tr>
 												
-												
-												
-								
+												<tr>
+												    <td id="iname"></td>
+													<td id="id"></td>
+													<td id="ope"></td>
+													<td id="imu"></td>
+													<td id="iman"></td>
+													<td id="itype"></td>
+													<td id="iran"></td>
+													<td id="iunits"></td>
+													<td id="ides"></td>
+												</tr>
 											  </tbody>
 											</table>
 										  </div><!--end of .table-responsive-->
@@ -287,19 +317,20 @@ xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
+
 // read the resources table
-var x=xmlDoc.getElementsByTagName("Item");
-var i=0;
-function dispalyItem(){
-var name = (x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
-var id = i;
-var operations = (x[i].getElementsByTagName("Operations")[0].childNodes[0].nodeValue);
-var multipleInstances = (x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
-var mandatory = (x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
-var type = (x[i].getElementsByTagName("Type")[0].childNodes[0].nodeValue);
-var ran = (x[i].getElementsByTagName("RangeEnumeration")[0].childNodes[0].nodeValue);
-var units = (x[i].getElementsByTagName("Units")[0].childNodes[0].nodeValue);
-var des = (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
+x=xmlDoc.getElementsByTagName("Item");
+
+function displayItem(){
+name = (x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+id = i;
+operations = (x[i].getElementsByTagName("Operations")[0].childNodes[0].nodeValue);
+multipleInstances = (x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
+mandatory = (x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
+type = (x[i].getElementsByTagName("Type")[0].childNodes[0].nodeValue);
+ran = (x[i].getElementsByTagName("RangeEnumeration")[0].childNodes[0].nodeValue);
+units = (x[i].getElementsByTagName("Units")[0].childNodes[0].nodeValue);
+des = (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
 
 document.getElementById("iname").innerHTML=name;
 document.getElementById("id").innerHTML=id;
@@ -311,6 +342,11 @@ document.getElementById("iran").innerHTML=ran;
 document.getElementById("iunits").innerHTML=units;
 document.getElementById("ides").innerHTML=des;
 }
+
+
+
+
+
 
 </script>
 </body>
