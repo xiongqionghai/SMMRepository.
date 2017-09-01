@@ -210,61 +210,10 @@
 										<div style="text-align: right; margin-bottom:5px;">
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.xml" download="Gateway_System"><img src="../images/dl.png" alt="download" /></a>
 										</div>
-										<pre class="prettyprint lang-xml"><xmp>										
+										<pre class="prettyprint lang-xml"><xmp>
+										
 <?xml version="1.0" encoding="utf-8"?>
-<LWM2M>
-    <Object ObjectType="MODefinition">
-        <Name>IPSO Gateway System</Name>
-        <Description1>This IPSO Object defines the basic settings for a generic gateway.</Description1>
-        <ObjectID>1022</ObjectID>
-        <ObjectURN>urn:oma:lwm2m:ext:1022</ObjectURN>
-        <MultipleInstances>Single</MultipleInstances>
-        <Mandatory>Mandatory</Mandatory>
-        <Resources>
-            <Item ID="0">
-                <Name>Hostname</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns the hostname of the gateway.</Description>
-            </Item>            
-            <Item ID="1">
-                <Name>Timezone</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns the default timezone.</Description>
-            </Item>      
-            <Item ID="2">
-                <Name>DNS Server List</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns a list of DNS Servers used by this system.</Description>
-            </Item>  
-            <Item ID="3">
-                <Name>NTP Server List</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns a list of NTP Servers.</Description>
-            </Item>  
-        </Resources>
-        <Description2></Description2>
-    </Object>
-</LWM2M>
+<span id="LWM2M"></span>
 </xmp></pre>
 										</div>
 									</div>	
@@ -422,6 +371,13 @@ document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
+	
+var co = document.write(xmlDoc.getElementsByTagName("LWM2M")
+[0].childNodes[0].nodeValue);
+
+document.getElementById("LWM2M").innerHTML=
+co;
+	
 </script>
 </body>
 </html> 
