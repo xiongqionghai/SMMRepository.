@@ -319,10 +319,7 @@ xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
 // read the resources table
 var x=xmlDoc.getElementsByTagName("Item");
-
-for (i=0;i<x.length;i++)
-{
-
+var i=0;
 function dispalyItem(){
 var name = (x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 var id = i;
@@ -343,8 +340,6 @@ document.getElementById("itype").innerHTML=type;
 document.getElementById("iran").innerHTML=ran;
 document.getElementById("iunits").innerHTML=units;
 document.getElementById("ides").innerHTML=des;
-}
-
 }
 
 </script>
