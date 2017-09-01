@@ -57,7 +57,7 @@
  <div class="row">
 	<div class="col-md-8 col-md-offset-2 conForm">
 	<h4 id="Name"></h4>
-	<h3><span id="Description1"></span></h3>
+	<h3 id="Description1"></h3>
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	    
 		<!-- LWM2M MODEL-->
@@ -72,8 +72,6 @@
 			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 				<div class="panel-body">
 					<div class="body-content">
-						
-						
 						<div class="panel-headingl" role="tab" id="headingSOne">
 							<h4 class="panel-titlel">
 							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
@@ -130,7 +128,7 @@
 											  </thead>
 											  <tbody>
 												<tr>
-												    <td>Hostname</td>
+												    <td id="iname"></td>
 													<td>0</td>
 													<td>R,W</td>
 													<td>No</td>
@@ -210,10 +208,61 @@
 										<div style="text-align: right; margin-bottom:5px;">
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.xml" download="Gateway_System"><img src="../images/dl.png" alt="download" /></a>
 										</div>
-										<pre class="prettyprint lang-xml"><xmp>
-										
+										<pre class="prettyprint lang-xml"><xmp>										
 <?xml version="1.0" encoding="utf-8"?>
-<span id="LWM2M"></span>
+<LWM2M>
+    <Object ObjectType="MODefinition">
+        <Name>IPSO Gateway System</Name>
+        <Description1>This IPSO Object defines the basic settings for a generic gateway.</Description1>
+        <ObjectID>1022</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:ext:1022</ObjectURN>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Resources>
+            <Item ID="0">
+                <Name>Hostname</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the hostname of the gateway.</Description>
+            </Item>            
+            <Item ID="1">
+                <Name>Timezone</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the default timezone.</Description>
+            </Item>      
+            <Item ID="2">
+                <Name>DNS Server List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of DNS Servers used by this system.</Description>
+            </Item>  
+            <Item ID="3">
+                <Name>NTP Server List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of NTP Servers.</Description>
+            </Item>  
+        </Resources>
+        <Description2></Description2>
+    </Object>
+</LWM2M>
 </xmp></pre>
 										</div>
 									</div>	
@@ -371,13 +420,33 @@ document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
-	
-var co = document.write(xmlDoc.getElementsByTagName("LWM2M")
-[0].childNodes[0].nodeValue);
+document.getElementById("Resources").innerHTML=
+xmlDoc.getElementsByTagName("Resources")[0].childNodes[0].nodeValue;
 
-document.getElementById("LWM2M").innerHTML=
-co;
-	
+// read the resources table
+var x=xmlDoc.getElementsByTagName("Item");
+var i = 0;
+
+function dispalyItem(){
+var name = (x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+var operations = (x[i].getElementsByTagName("Operations")[0].childNodes[0].nodeValue);
+var multipleInstances = (x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
+var mandatory = (x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
+var type = (x[i].getElementsByTagName("Type")[0].childNodes[0].nodeValue);
+var ran = (x[i].getElementsByTagName("RangeEnumeration")[0].childNodes[0].nodeValue);
+var units = (x[i].getElementsByTagName("Units")[0].childNodes[0].nodeValue);
+var des = (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
+
+document.getElementById("iname").innerHTML=name;
+
+
+}
+
+
+
+
+
+
 </script>
 </body>
 </html> 
