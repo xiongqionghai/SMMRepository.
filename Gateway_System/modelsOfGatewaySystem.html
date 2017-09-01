@@ -129,47 +129,48 @@
 											  <tbody>
 												<tr>
 												    <td id="iname"></td>
-													<td>0</td>
-													<td>R,W</td>
-													<td>No</td>
-													<td>Optional</td>
-													<td>String</td>
-													<td>/</td>
-													<td>/</td>
-													<td>Hostname of the System</td>
+													<td id="id"></td>
+													<td id="ope"></td>
+													<td id="imu"></td>
+													<td id="iman"></td>
+													<td id="itype"></td>
+													<td id="iran"></td>
+													<td id="iunits"></td>
+													<td id="ides"></td>
 												</tr>
 												<tr>
-												    <td>Timezone</td>
-													<td>1</td>
-													<td>R,W</td>
-													<td>No</td>
-													<td>Optional</td>
-													<td>String</td>
-													<td>/</td>
-													<td>/</td>
-													<td>The timezone used in the system</td>
+												    <td id="iname"></td>
+													<td id="id"></td>
+													<td id="ope"></td>
+													<td id="imu"></td>
+													<td id="iman"></td>
+													<td id="itype"></td>
+													<td id="iran"></td>
+													<td id="iunits"></td>
+													<td id="ides"></td>
 												</tr>
 												<tr>
-												    <td>DNS Server List</td>
-													<td>2</td>
-													<td>R,W</td>
-													<td>No</td>
-													<td>Optional</td>
-													<td>String</td>
-													<td>/</td>
-													<td>/</td>
-													<td>List of DNS Servers used by this system</td>
+												    <td id="iname"></td>
+													<td id="id"></td>
+													<td id="ope"></td>
+													<td id="imu"></td>
+													<td id="iman"></td>
+													<td id="itype"></td>
+													<td id="iran"></td>
+													<td id="iunits"></td>
+													<td id="ides"></td>
 												</tr>
+												
 												<tr>
-												    <td>NTP Server List</td>
-													<td>3</td>
-													<td>R,W</td>
-													<td>No</td>
-													<td>Optional</td>
-													<td>String</td>
-													<td>/</td>
-													<td>/</td>
-													<td>List of NTP Servers used by this system</td>
+												    <td id="iname"></td>
+													<td id="id"></td>
+													<td id="ope"></td>
+													<td id="imu"></td>
+													<td id="iman"></td>
+													<td id="itype"></td>
+													<td id="iran"></td>
+													<td id="iunits"></td>
+													<td id="ides"></td>
 												</tr>
 											  </tbody>
 											</table>
@@ -209,60 +210,7 @@
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.xml" download="Gateway_System"><img src="../images/dl.png" alt="download" /></a>
 										</div>
 										<pre class="prettyprint lang-xml"><xmp>										
-<?xml version="1.0" encoding="utf-8"?>
-<LWM2M>
-    <Object ObjectType="MODefinition">
-        <Name>IPSO Gateway System</Name>
-        <Description1>This IPSO Object defines the basic settings for a generic gateway.</Description1>
-        <ObjectID>1022</ObjectID>
-        <ObjectURN>urn:oma:lwm2m:ext:1022</ObjectURN>
-        <MultipleInstances>Single</MultipleInstances>
-        <Mandatory>Mandatory</Mandatory>
-        <Resources>
-            <Item ID="0">
-                <Name>Hostname</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns the hostname of the gateway.</Description>
-            </Item>            
-            <Item ID="1">
-                <Name>Timezone</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns the default timezone.</Description>
-            </Item>      
-            <Item ID="2">
-                <Name>DNS Server List</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns a list of DNS Servers used by this system.</Description>
-            </Item>  
-            <Item ID="3">
-                <Name>NTP Server List</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns a list of NTP Servers.</Description>
-            </Item>  
-        </Resources>
-        <Description2></Description2>
-    </Object>
-</LWM2M>
+
 </xmp></pre>
 										</div>
 									</div>	
@@ -283,59 +231,7 @@
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.json" download=""><img src="../images/dl.png" alt="download" /></a>
 										</div>
 										 <pre class="prettyprint lang-json"><xmp>
-	     {
-  "LWM2M": {
-    "Object": {
-      "-ObjectType": "MODefinition",
-      "Name": "IPSO Gateway System",
-      "Description1": "This IPSO Object defines the basic settings for a generic gateway.",
-      "ObjectID": "1022",
-      "ObjectURN": "urn:oma:lwm2m:ext:1022",
-      "MultipleInstances": "Single",
-      "Mandatory": "Mandatory",
-      "Resources": {
-        "Item": [
-          {
-            "-ID": "0",
-            "Name": "Hostname",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns the hostname of the gateway."
-          },
-          {
-            "-ID": "1",
-            "Name": "Timezone",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns the default timezone."
-          },
-          {
-            "-ID": "2",
-            "Name": "DNS Server List",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns a list of DNS Servers used by this system."
-          },
-          {
-            "-ID": "3",
-            "Name": "NTP Server List",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns a list of NTP Servers."
-          }
-        ]
-      }
-    }
-  }
-}
+
 </xmp></pre>
 										</div>
 									</div>	
@@ -425,10 +321,13 @@ xmlDoc.getElementsByTagName("Resources")[0].childNodes[0].nodeValue;
 
 // read the resources table
 var x=xmlDoc.getElementsByTagName("Item");
-var i = 0;
+
+for (i=0;i<x.length;i++)
+{
 
 function dispalyItem(){
 var name = (x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+var id = i;
 var operations = (x[i].getElementsByTagName("Operations")[0].childNodes[0].nodeValue);
 var multipleInstances = (x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
 var mandatory = (x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
@@ -438,14 +337,17 @@ var units = (x[i].getElementsByTagName("Units")[0].childNodes[0].nodeValue);
 var des = (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
 
 document.getElementById("iname").innerHTML=name;
-
-
+document.getElementById("id").innerHTML=id;
+document.getElementById("ope").innerHTML=operations;
+document.getElementById("imu").innerHTML=multipleInstances;
+document.getElementById("iman").innerHTML=mandatory;
+document.getElementById("itype").innerHTML=type;
+document.getElementById("iran").innerHTML=ran;
+document.getElementById("iunits").innerHTML=units;
+document.getElementById("ides").innerHTML=des;
 }
 
-
-
-
-
+}
 
 </script>
 </body>
