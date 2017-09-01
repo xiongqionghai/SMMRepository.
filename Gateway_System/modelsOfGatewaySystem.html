@@ -18,7 +18,7 @@
 <script type="text/javascript" src="../google-code-prettify/prettify.js"></script>
 </head>
 
-<body onload="prettyPrint()" onload="displayItem()">
+<body onload="prettyPrint()">
 <!-- header section -->
 <section class="navpart">
   <header id="header">
@@ -127,8 +127,8 @@
 												</tr>
 											  </thead>
 											  <tbody>
-												<tr id ="ird">
-												    <td id="iname"></td>
+												<tr>
+												    <td id="Name"></td>
 													<td id="id"></td>
 													<td id="ope"></td>
 													<td id="imu"></td>
@@ -302,7 +302,7 @@ des = (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
 
 tb = "<td>" + name + "</td>" + "<td>" + id + "</td>";
 
-document.getElementById("ird").innerHTML=tb;
+document.getElementById("Name").innerHTML=name;
 }
 
 
