@@ -132,7 +132,7 @@
 												<tr>
 												    <td id="rname"></td>
 													<td>0</td>
-													<td><span id="Operations"></span></td>
+													<td><span id="op"></span></td>
 													<td>No</td>
 													<td>Optional</td>
 													<td>String</td>
@@ -665,17 +665,12 @@ document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
 
-items=xmlDoc.getElementsByTagName("Item");
+x=xmlDoc.getElementsByTagName("Operations")[0];
+y=x.childNodes[0];
+txt=y.nodeValue;
 
-Operations=getElementsByTagName("Operations");
-
-ocument.getElementById("Operations").innerHTML = 
-document.write(Operations[2].childNodes[0].nodeValue);
-
-
-document.getElementById("rname").innerHTML=items.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
-
-
+document.getElementById("op").innerHTML=
+txt;
 
 </script>
 </body>
