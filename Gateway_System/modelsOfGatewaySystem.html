@@ -127,29 +127,7 @@
 												</tr>
 											  </thead>
 											  <tbody>
-												<tr>
-												    <td id="iname"></td>
-													<td id="id"></td>
-													<td id="ope"></td>
-													<td id="imu"></td>
-													<td id="iman"></td>
-													<td id="itype"></td>
-													<td id="iran"></td>
-													<td id="iunits"></td>
-													<td id="ides"></td>
-												</tr>
-												<tr>
-												    <td id="iname"></td>
-													<td id="id"></td>
-													<td id="ope"></td>
-													<td id="imu"></td>
-													<td id="iman"></td>
-													<td id="itype"></td>
-													<td id="iran"></td>
-													<td id="iunits"></td>
-													<td id="ides"></td>
-												</tr>
-												<tr>
+												<tr id ="ird">
 												    <td id="iname"></td>
 													<td id="id"></td>
 													<td id="ope"></td>
@@ -161,17 +139,7 @@
 													<td id="ides"></td>
 												</tr>
 												
-												<tr>
-												    <td id="iname"></td>
-													<td id="id"></td>
-													<td id="ope"></td>
-													<td id="imu"></td>
-													<td id="iman"></td>
-													<td id="itype"></td>
-													<td id="iran"></td>
-													<td id="iunits"></td>
-													<td id="ides"></td>
-												</tr>
+												
 											  </tbody>
 											</table>
 										  </div><!--end of .table-responsive-->
@@ -332,16 +300,11 @@ ran = (x[i].getElementsByTagName("RangeEnumeration")[0].childNodes[0].nodeValue)
 units = (x[i].getElementsByTagName("Units")[0].childNodes[0].nodeValue);
 des = (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
 
-document.getElementById("iname").innerHTML=name;
-document.getElementById("id").innerHTML=id;
-document.getElementById("ope").innerHTML=operations;
-document.getElementById("imu").innerHTML=multipleInstances;
-document.getElementById("iman").innerHTML=mandatory;
-document.getElementById("itype").innerHTML=type;
-document.getElementById("iran").innerHTML=ran;
-document.getElementById("iunits").innerHTML=units;
-document.getElementById("ides").innerHTML=des;
+tb = "<td>" + name + "</td>" + "<td>" + id + "</td>";
+
+document.getElementById("ird").innerHTML=tb;
 }
+
 
 
 
