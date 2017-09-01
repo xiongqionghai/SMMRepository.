@@ -77,7 +77,7 @@
 						<div class="panel-headingl" role="tab" id="headingSOne">
 							<h4 class="panel-titlel">
 							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
-							Object vesion:   <span id="objectURN"></span>
+							Object vesion:   <span id="ObjectURN"></span>
 							</a>
 							</h4>
 						</div>
@@ -87,18 +87,7 @@
 							     <!-- object_file_sumcheck-->
 							     <div class="body-content">
 								
-									<div class="panel-headings" role="tab" id="headingsone">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesone" aria-expanded="false" aria-controls="collapsesone">
-										Sumcheck 
-									</a>
-									</h4>
-									</div>
-									<div id="collapsesone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsone">
-									<div class="panel-bodys">	
-										917d11c244a7271a054a68b1cf1d47c618ca562 
-									</div>
-									</div>
+									
 								
 								 </div>
 								<!-- object_file_Resources fields-->
@@ -179,168 +168,9 @@
 										</div>
 									</div>	
 								</div>
-								
-								<!-- object_file_Example usage-->
-								
-									<div class="panel-headings" role="tab" id="headingsthree">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesthree" aria-expanded="false" aria-controls="collapsesthree">
-										Example usage
-									</a>
-									</h4>
-									</div>
-									<div id="collapsesthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsthree">
-										<div class="panel-bodys">
-										Outline how to interact with this object, if needed
-										</div>
-									</div>	
-								</div>
-								
-								<!-- object_file_xml-->
-								
-									<div class="panel-headings" role="tab" id="headingsfour">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfour" aria-expanded="false" aria-controls="collapsesfour">
-										XML
-									</a>
-									</h4>
-									</div>
-									<div id="collapsesfour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfour">
-										<div class="panel-bodys">
-										<div style="text-align: right; margin-bottom:5px;">
-										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.xml" download="Gateway_System"><img src="../images/dl.png" alt="download" /></a>
-										</div>
-										<pre class="prettyprint lang-xml"><xmp>										
-<?xml version="1.0" encoding="utf-8"?>
-<LWM2M>
-    <Object ObjectType="MODefinition">
-        <Name>IPSO Gateway System</Name>
-        <Description1>This IPSO Object defines the basic settings for a generic gateway.</Description1>
-        <ObjectID>1022</ObjectID>
-        <ObjectURN>urn:oma:lwm2m:ext:1022</ObjectURN>
-        <MultipleInstances>Single</MultipleInstances>
-        <Mandatory>Mandatory</Mandatory>
-        <Resources>
-            <Item ID="0">
-                <Name>Hostname</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns the hostname of the gateway.</Description>
-            </Item>            
-            <Item ID="1">
-                <Name>Timezone</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns the default timezone.</Description>
-            </Item>      
-            <Item ID="2">
-                <Name>DNS Server List</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns a list of DNS Servers used by this system.</Description>
-            </Item>  
-            <Item ID="3">
-                <Name>NTP Server List</Name>
-                <Operations>RW</Operations>
-                <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
-                <Type>String</Type>
-                <RangeEnumeration/>
-                <Units/>
-                <Description>This resource type returns a list of NTP Servers.</Description>
-            </Item>  
-        </Resources>
-        <Description2></Description2>
-    </Object>
-</LWM2M>
-</xmp></pre>
-										</div>
-									</div>	
-								</div>
+				
 									
-								
-								
-									<div class="panel-headings" role="tab" id="headingsfive">
-									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfive" aria-expanded="false" aria-controls="collapsesfive">
-										JSON
-									</a>
-									</h4>
-									</div>
-									<div id="collapsesfive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfive">
-										<div class="panel-bodys">
-										<div style="text-align: right; margin-bottom:5px;">
-										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.json" download=""><img src="../images/dl.png" alt="download" /></a>
-										</div>
-										 <pre class="prettyprint lang-json"><xmp>
-	     {
-  "LWM2M": {
-    "Object": {
-      "-ObjectType": "MODefinition",
-      "Name": "IPSO Gateway System",
-      "Description1": "This IPSO Object defines the basic settings for a generic gateway.",
-      "ObjectID": "1022",
-      "ObjectURN": "urn:oma:lwm2m:ext:1022",
-      "MultipleInstances": "Single",
-      "Mandatory": "Mandatory",
-      "Resources": {
-        "Item": [
-          {
-            "-ID": "0",
-            "Name": "Hostname",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns the hostname of the gateway."
-          },
-          {
-            "-ID": "1",
-            "Name": "Timezone",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns the default timezone."
-          },
-          {
-            "-ID": "2",
-            "Name": "DNS Server List",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns a list of DNS Servers used by this system."
-          },
-          {
-            "-ID": "3",
-            "Name": "NTP Server List",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns a list of NTP Servers."
-          }
-        ]
-      }
-    }
-  }
-}
-</xmp></pre>
-										</div>
-									</div>	
+										
 								</div>
 								
 								
