@@ -132,7 +132,7 @@
 												<tr>
 												    <td id="rname"></td>
 													<td>0</td>
-													<td>R,W</td>
+													<td id="op"></td>
 													<td>No</td>
 													<td>Optional</td>
 													<td>String</td>
@@ -666,9 +666,13 @@ xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
 
 items=xmlDoc.getElementsByTagName("Item");
-rename = items.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+ocument.getElementById("op").innerHTML = xmlDoc.getElementsByTagName("Operations")[0].childNodes[0].nodeValue;
 
-document.getElementById("rname").innerHTML=rename;
+
+
+
+document.getElementById("rname").innerHTML=items.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+
 
 
 </script>
