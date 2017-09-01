@@ -56,8 +56,8 @@
 <div class="container">
  <div class="row">
 	<div class="col-md-8 col-md-offset-2 conForm">
-	<h4 id="Name"></h4>
-	<h3 id="Description1"></h3>
+	<h4>Gateway System Object</h4>
+	<h3>This object defines the basic settings for a generic gateway</h3>
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	    
 		<!-- LWM2M MODEL-->
@@ -72,10 +72,12 @@
 			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 				<div class="panel-body">
 					<div class="body-content">
+						
+						
 						<div class="panel-headingl" role="tab" id="headingSOne">
 							<h4 class="panel-titlel">
 							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSOne" aria-expanded="false" aria-controls="collapseSOne">
-							Object vesion: <span id="ObjectURN"></span>
+							Object vesion:   urn:oma:lwm2m:ext:1022:1
 							</a>
 							</h4>
 						</div>
@@ -111,8 +113,7 @@
 									<div id="collapsestwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtstwo">
 										<div class="panel-bodys">
 										    <!-- table of content-->
-										<div class="">
-									
+											<div class="table-responsive">
 											<table class="table table-bordered table-hover">
 											  <thead>
 												<tr>
@@ -127,52 +128,52 @@
 													<th>Description</th>
 												</tr>
 											  </thead>
-											  
-											  
-											  
-													<script>
-										if (window.XMLHttpRequest)
-										  {// code for IE7+, Firefox, Chrome, Opera, Safari
-										  xmlhttp=new XMLHttpRequest();
-										  }
-										else
-										  {// code for IE6, IE5
-										  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-										  }
-										xmlhttp.open("GET","Gateway_System.xml.xml",false);
-										xmlhttp.send();
-										xmlDoc=xmlhttp.responseXML; 
-
-										document.write("<tbody");
-										
-										var x=xmlDoc.getElementsByTagName("Item");
-										for (i=0;i<x.length;i++)
-										  { 
-										  document.write("<tr><td>");
-										  document.write(x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
-										  document.write("</td><td>");
-										  document.write(i);
-										  document.write("</td><td>");
-										  document.write(x[i].getElementsByTagName("Operations")[0].childNodes[0].nodeValue);
-										  document.write("</td><td>");
-										  document.write(x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
-										  document.write("</td><td>");
-										  document.write(x[i].getElementsByTagName("Mandatory")[0].childNodes[0].nodeValue);
-										  document.write("</td><td>");
-										  document.write(x[i].getElementsByTagName("Type")[0].childNodes[0].nodeValue);
-										  document.write("</td><td>");
-										  document.write(x[i].getElementsByTagName("RangeEnumeration")[0].childNodes[0].nodeValue);
-										  document.write("</td><td>");
-										  document.write(x[i].getElementsByTagName("Units")[0].childNodes[0].nodeValue);
-										  document.write("</td><td>");
-										  document.write(x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
-										  document.write("</td><td>");
-		
-							
-										  }
-										document.write("</tbody>");
-										</script>
-											  
+											  <tbody>
+												<tr>
+												    <td id="rname"></td>
+													<td>0</td>
+													<td>R,W</td>
+													<td>No</td>
+													<td>Optional</td>
+													<td>String</td>
+													<td>/</td>
+													<td>/</td>
+													<td>Hostname of the System</td>
+												</tr>
+												<tr>
+												    <td>Timezone</td>
+													<td>1</td>
+													<td>R,W</td>
+													<td>No</td>
+													<td>Optional</td>
+													<td>String</td>
+													<td>/</td>
+													<td>/</td>
+													<td>The timezone used in the system</td>
+												</tr>
+												<tr>
+												    <td>DNS Server List</td>
+													<td>2</td>
+													<td>R,W</td>
+													<td>No</td>
+													<td>Optional</td>
+													<td>String</td>
+													<td>/</td>
+													<td>/</td>
+													<td>List of DNS Servers used by this system</td>
+												</tr>
+												<tr>
+												    <td>NTP Server List</td>
+													<td>3</td>
+													<td>R,W</td>
+													<td>No</td>
+													<td>Optional</td>
+													<td>String</td>
+													<td>/</td>
+													<td>/</td>
+													<td>List of NTP Servers used by this system</td>
+												</tr>
+											  </tbody>
 											</table>
 										  </div><!--end of .table-responsive-->
 										</div>
@@ -210,7 +211,60 @@
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.xml" download="Gateway_System"><img src="../images/dl.png" alt="download" /></a>
 										</div>
 										<pre class="prettyprint lang-xml"><xmp>										
-
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M>
+    <Object ObjectType="MODefinition">
+        <Name>IPSO Gateway System</Name>
+        <Description1>This IPSO Object defines the basic settings for a generic gateway.</Description1>
+        <ObjectID>1022</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:ext:1022</ObjectURN>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Resources>
+            <Item ID="0">
+                <Name>Hostname</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the hostname of the gateway.</Description>
+            </Item>            
+            <Item ID="1">
+                <Name>Timezone</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns the default timezone.</Description>
+            </Item>      
+            <Item ID="2">
+                <Name>DNS Server List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of DNS Servers used by this system.</Description>
+            </Item>  
+            <Item ID="3">
+                <Name>NTP Server List</Name>
+                <Operations>RW</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Optional</Mandatory>
+                <Type>String</Type>
+                <RangeEnumeration/>
+                <Units/>
+                <Description>This resource type returns a list of NTP Servers.</Description>
+            </Item>  
+        </Resources>
+        <Description2></Description2>
+    </Object>
+</LWM2M>
 </xmp></pre>
 										</div>
 									</div>	
@@ -231,7 +285,59 @@
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.json" download=""><img src="../images/dl.png" alt="download" /></a>
 										</div>
 										 <pre class="prettyprint lang-json"><xmp>
-
+	     {
+  "LWM2M": {
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "IPSO Gateway System",
+      "Description1": "This IPSO Object defines the basic settings for a generic gateway.",
+      "ObjectID": "1022",
+      "ObjectURN": "urn:oma:lwm2m:ext:1022",
+      "MultipleInstances": "Single",
+      "Mandatory": "Mandatory",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "0",
+            "Name": "Hostname",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the hostname of the gateway."
+          },
+          {
+            "-ID": "1",
+            "Name": "Timezone",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the default timezone."
+          },
+          {
+            "-ID": "2",
+            "Name": "DNS Server List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of DNS Servers used by this system."
+          },
+          {
+            "-ID": "3",
+            "Name": "NTP Server List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of NTP Servers."
+          }
+        ]
+      }
+    }
+  }
+}
 </xmp></pre>
 										</div>
 									</div>	
@@ -282,10 +388,251 @@
 								</div>
 							 </div>
 						</div>
+						
+						<div class="panel-headingl" role="tab" id="headingSTwo">
+							<h4 class="panel-titlel">
+							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseOne" href="#collapseSTwo" aria-expanded="false" aria-controls="collapseSTwo">
+							Object vesion:   urn:oma:lwm2m:ext:1022:2
+							</a>
+							</h4>
+						</div>
+						<div id="collapseSTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSTwo">
+							<div class="panel-body">
+							
+							</div>
+						</div>	
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		<!-- UCI MODEL-->
+		<div class="panel panel-default">
+			<div class="panel-heading sn" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				UCI Model
+				</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="panel-body">
+					<div class="body-content">
+					
+						<!-- description-->
+						<div class="panel-headings" role="tab" id="headinguone">
+							<h4 class="panel-titles">
+							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseuone" aria-expanded="false" aria-controls="collapseuone">
+							Description
+							</a>
+							</h4>
+						</div>
+						<div id="collapseuone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinguone">
+							<div class="panel-bodys">
+							OpenWRT gateway native data model for the whole gateway
+							</div>
+						</div>
+						
+						<!-- URL-->
+						<div class="panel-headings" role="tab" id="headingutwo">
+							<h4 class="panel-titles">
+							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseutwo" aria-expanded="false" aria-controls="collapseutwo">
+							URL
+							</a>
+							</h4>
+						</div>
+						<div id="collapseutwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingutwo">
+							<div class="panel-bodys">
+							file://localhost/etc/config/system
+							</div>
+						</div>
+						
+						<!-- Config-->
+						<div class="panel-headings" role="tab" id="headinguthree">
+							<h4 class="panel-titles">
+							<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseTwo" href="#collapseuthree" aria-expanded="false" aria-controls="collapseuthree">
+							Config
+							</a>
+							</h4>
+						</div>
+						<div id="collapseuthree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinguthree">
+							<div class="panel-body">
+							    <!-- Config-system-->
+								<div class="body-content">
+									<div class="panel-headingsb" role="tab" id="headingtso">
+									<h4 class="panel-titlesb">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetso" aria-expanded="false" aria-controls="collapsetso">
+										System <br>The system section contains settings that apply to the most basic operation of the system.
+									</a>
+									</h4>
+									</div>
+									<div id="collapsetso" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso">
+										<div class="panel-body">
+										<div class="body-content">
+												<div class="panel-headingsbt" role="tab" id="headingtso1">
+												<h4 class="panel-titlesb">
+												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetso" href="#collapsetso1" aria-expanded="false" aria-controls="collapsetso1">
+												Option fields
+												</a>
+												</h4>
+												</div>
+												<div id="collapsetso1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtso1">
+													<div class="panel-bodys">
+													<!-- table of content-->
+													<div class="table-responsive">
+													<table class="table table-bordered table-hover">
+														  <thead>
+															<tr>
+															<th>Name</th>
+															<th>Type</th>
+															<th>Required</th>
+															<th>Default</th>
+															<th>Description</th>
+															</tr>
+														  </thead>
+															  <tbody>
+																<tr>
+																	<td>hostname</td>
+																	<td>string</td>
+																	<td>no</td>
+																	<td>OpenWrt</td>
+																	<td>The hostname for this system. Avoid points, even if they are within single or double quotes. For example 'my.hostname' will show only the 'my' part.</td>	
+																</tr>
+																
+																<tr>
+																	<td>timezone</td>
+																	<td>string</td>
+																	<td>no</td>
+																	<td>UTC</td>
+																	<td>The time zone that date and time should be rendered in by default.</td>	
+																</tr>
+														  </tbody>
+														</table>
+													  </div><!--end of .table-responsive-->
+													</div>
+												</div>
+											</div>	 
+										</div>
+									</div>
+								</div>	
+								
+								<!-- Config-timeserver-->
+								<div class="body-content">
+									<div class="panel-headingsb" role="tab" id="headingtst">
+									<h4 class="panel-titlesb">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseuthree" href="#collapsetst" aria-expanded="false" aria-controls="collapsetst">
+										Timeserver <br>The timeserver section contains a list of NTP servers for the system to use.
+									</a>
+									</h4>
+									</div>
+									<div id="collapsetst" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst">
+										<div class="panel-body">
+										
+										<!-- Config-timeserver-list fields-->
+											<div class="body-content">
+												<div class="panel-headingsbt" role="tab" id="headingtst1">
+												<h4 class="panel-titles">
+												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst1" aria-expanded="false" aria-controls="collapsetst1">
+												List fields
+												</a>
+												</h4>
+												</div>
+												<div id="collapsetst1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst1">
+													<div class="panel-bodys">
+													<!-- table of content-->
+													<div class="table-responsive">
+															<table class="table table-bordered table-hover">
+															  <thead>
+																<tr>
+																	<th>Name</th>
+																	<th>Type</th>
+																	<th>Required</th>
+																	<th>Default</th>
+																	<th>Description</th>
+																</tr>
+															  </thead>
+															  <tbody>
+																<tr>
+																	<td>server</td>
+																	<td>list of hostnames</td>
+																	<td>no</td>
+																	<td>none</td>
+																	<td>Defines the pool of NTP servers to poll the time from. If the list is empty, the builtin NTP daemon is not started.</td>	
+																</tr>																
+															  </tbody>
+															</table>
+													</div>			
+										<!-- table end--> 
+													</div>
+												</div>
+											</div>	
+										
+										<!-- Config-timeserver-option fields-->
+											<div class="body-content">
+												<div class="panel-headingsbt" role="tab" id="headingtst2">
+												<h4 class="panel-titlesb">
+												<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapsetst" href="#collapsetst2" aria-expanded="false" aria-controls="collapsetst2">
+												Option fields
+												</a>
+												</h4>
+												</div>
+												<div id="collapsetst2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtst2">
+													<div class="panel-bodys">
+														<!-- table of content-->
+													<div class="table-responsive">
+															<table class="table table-bordered table-hover">
+															  <thead>
+																<tr>
+																	<th>Name</th>
+																	<th>Type</th>
+																	<th>Required</th>
+																	<th>Default</th>
+																	<th>Description</th>
+																</tr>
+															  </thead>
+															  <tbody>
+																<tr>
+																	<td>enable_server</td>
+																	<td>boolean</td>
+																	<td>no</td>
+																	<td>0</td>
+																	<td>You can put busybox-ntpd in client mode only: by defining at least one host to server and puting enable_server 0 client & server mode: by putting enable_server to 1, (busybox-ntpd listens to UDP 123 by default), server mode only: by not defining any servers in the config and just put enable_server 1 (ntpd will answer with the time of the router)</td>	
+																</tr>															
+															  </tbody>
+															</table>
+													</div>						
+										<!-- table end--> 
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>		
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="panel panel-default">
+			<div class="panel-heading sn" role="tab" id="headingThree">
+				<h4 class="panel-title">
+				<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				Other Model
+				</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="panel-body">
+					
+				</div>
+			</div>
+		</div>
+		
+
 </div>		
 </div>
 </div>
@@ -296,7 +643,7 @@
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>  
-<script src="../js/main.js"></script>
+<script src="../js/main.js"></script> 
 <script>
 if (window.XMLHttpRequest)
 {
@@ -318,7 +665,10 @@ document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
 
+items=xmlDoc.getElementsByTagName("Item");
+rename = items.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 
+document.getElementById("rname").innerHTML=rename;
 
 
 </script>
