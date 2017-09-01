@@ -111,7 +111,8 @@
 									<div id="collapsestwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtstwo">
 										<div class="panel-bodys">
 										    <!-- table of content-->
-											<div class="table-responsive">
+										<div class="">
+									
 											<table class="table table-bordered table-hover">
 											  <thead>
 												<tr>
@@ -126,21 +127,52 @@
 													<th>Description</th>
 												</tr>
 											  </thead>
-											  <tbody>
-												<tr>
-												    <td id="rname"></td>
-													<td id="id"></td>
-													<td id="ope"></td>
-													<td id="imu"></td>
-													<td id="iman"></td>
-													<td id="itype"></td>
-													<td id="iran"></td>
-													<td id="iunits"></td>
-													<td id="ides"></td>
-												</tr>
-												
-												
-											  </tbody>
+											  
+											  
+											  
+													<script>
+										if (window.XMLHttpRequest)
+										  {// code for IE7+, Firefox, Chrome, Opera, Safari
+										  xmlhttp=new XMLHttpRequest();
+										  }
+										else
+										  {// code for IE6, IE5
+										  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+										  }
+										xmlhttp.open("GET","Gateway_System.xml.xml",false);
+										xmlhttp.send();
+										xmlDoc=xmlhttp.responseXML; 
+
+										document.write("<tbody");
+										
+										var x=xmlDoc.getElementsByTagName("Item");
+										for (i=0;i<x.length;i++)
+										  { 
+										  document.write("<tr><td>");
+										  document.write(x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+										  document.write("</td><td>");
+										  document.write(i);
+										  document.write("</td><td>");
+										  document.write(x[i].getElementsByTagName("Operations")[0].childNodes[0].nodeValue);
+										  document.write("</td><td>");
+										  document.write(x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
+										  document.write("</td><td>");
+										  document.write(x[i].getElementsByTagName("Mandatory")[0].childNodes[0].nodeValue);
+										  document.write("</td><td>");
+										  document.write(x[i].getElementsByTagName("Type")[0].childNodes[0].nodeValue);
+										  document.write("</td><td>");
+										  document.write(x[i].getElementsByTagName("RangeEnumeration")[0].childNodes[0].nodeValue);
+										  document.write("</td><td>");
+										  document.write(x[i].getElementsByTagName("Units")[0].childNodes[0].nodeValue);
+										  document.write("</td><td>");
+										  document.write(x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
+										  document.write("</td><td>");
+		
+							
+										  }
+										document.write("</tbody>");
+										</script>
+											  
 											</table>
 										  </div><!--end of .table-responsive-->
 										</div>
@@ -267,11 +299,11 @@
 <script src="../js/main.js"></script>
 <script>
 if (window.XMLHttpRequest)
-{// code for IE7+, Firefox, Chrome, Opera, Safari
+{
 xmlhttp=new XMLHttpRequest();
 }
 else
-{// code for IE6, IE5
+{
 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
 xmlhttp.open("GET","Gateway_System.xml",false);
@@ -284,13 +316,6 @@ document.getElementById("Description1").innerHTML=
 xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
-
-// read the resources table
-x=xmlDoc.getElementsByTagName("Item");
-
-document.getElementById("rname").innerHTML=(x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
-
-
 
 
 
