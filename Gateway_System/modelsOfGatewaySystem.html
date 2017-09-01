@@ -132,7 +132,7 @@
 												<tr>
 												    <td id="rname"></td>
 													<td>0</td>
-													<td><span id="op"></span></td>
+													<td><span id="Operations"></span></td>
 													<td>No</td>
 													<td>Optional</td>
 													<td>String</td>
@@ -666,7 +666,8 @@ xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
 
 items=xmlDoc.getElementsByTagName("Item");
-ocument.getElementById("op").innerHTML = xmlDoc.getElementsByTagName("Operations")[0].childNodes[0].nodeValue;
+ocument.getElementById("Operations").innerHTML = 
+xmlDoc.getElementsByTagName("Operations")[0].childNodes[0].nodeValue;
 
 
 
