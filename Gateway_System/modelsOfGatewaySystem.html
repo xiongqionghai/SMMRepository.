@@ -128,7 +128,7 @@
 											  </thead>
 											  <tbody>
 												<tr>
-												    <td id="Name"></td>
+												    <td id="namei"></td>
 													<td id="id"></td>
 													<td id="ope"></td>
 													<td id="imu"></td>
@@ -285,12 +285,9 @@ xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
-
 // read the resources table
 x=xmlDoc.getElementsByTagName("Item");
-
-function displayItem(){
-name = (x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+iname = (x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
 id = i;
 operations = (x[i].getElementsByTagName("Operations")[0].childNodes[0].nodeValue);
 multipleInstances = (x[i].getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue);
@@ -300,10 +297,7 @@ ran = (x[i].getElementsByTagName("RangeEnumeration")[0].childNodes[0].nodeValue)
 units = (x[i].getElementsByTagName("Units")[0].childNodes[0].nodeValue);
 des = (x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue);
 
-tb = "<td>" + name + "</td>" + "<td>" + id + "</td>";
-
-document.getElementById("Name").innerHTML=name;
-}
+document.getElementById("namei").innerHTML=iname;
 
 
 
