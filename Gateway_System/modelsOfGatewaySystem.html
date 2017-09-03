@@ -95,7 +95,7 @@
 									<div class="panel-headings" role="tab" id="headingstwo">
 									<h4 class="panel-titles">
 									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsestwo" aria-expanded="false" aria-controls="collapsestwo">
-										<span id="Operations1"></span>
+										Resources Fields
 									</a>
 									</h4>
 									</div>
@@ -254,6 +254,16 @@
 </div>		
 </div>
 </div>
+
+
+<div id="upload">
+    <h2>Gimme Yo ODF Cornbread</h2>
+    <form enctype="multipart/form-data" method="post">
+        <input type="file" name="GatewaySystemxml" id="GatewaySystemxml" />
+    </form>
+</div>
+
+
 </div><!-- .container --> 
 <!-- models section --> 	
 </section>
@@ -335,5 +345,18 @@ document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
 
 </script>
+<script>
+    $("#GatewaySystemxml").change(function(){
+        var file = document.getElementById("Gateway_System.xml").files[0];
+                    //You could insert a check here to ensure proper file type
+        var reader = new FileReader();
+        reader.readAsText(file);
+        reader.onloadend = function(){
+            var xmlData = $(reader.result);
+        };
+    });
+</script>
+
+
 </body>
 </html> 
