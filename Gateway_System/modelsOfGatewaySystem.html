@@ -223,7 +223,7 @@ xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
 window.onload = function() {
-		var fileInput = document.open("Gateway_System.xml");
+		var fileInput = xmlDoc;
 		var fileDisplayArea = document.getElementById("fileDisplayArea");
 
 		fileInput.addEventListener('change', function(e) {
