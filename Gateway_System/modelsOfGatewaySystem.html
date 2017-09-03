@@ -181,60 +181,8 @@
 										<div style="text-align: right; margin-bottom:5px;">
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.json" download=""><img src="../images/dl.png" alt="download" /></a>
 										</div>
-										 <pre class="prettyprint lang-json"><xmp>
-	     {
-  "LWM2M": {
-    "Object": {
-      "-ObjectType": "MODefinition",
-      "Name": "IPSO Gateway System",
-      "Description1": "This IPSO Object defines the basic settings for a generic gateway.",
-      "ObjectID": "1022",
-      "ObjectURN": "urn:oma:lwm2m:ext:1022",
-      "MultipleInstances": "Single",
-      "Mandatory": "Mandatory",
-      "Resources": {
-        "Item": [
-          {
-            "-ID": "0",
-            "Name": "Hostname",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns the hostname of the gateway."
-          },
-          {
-            "-ID": "1",
-            "Name": "Timezone",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns the default timezone."
-          },
-          {
-            "-ID": "2",
-            "Name": "DNS Server List",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns a list of DNS Servers used by this system."
-          },
-          {
-            "-ID": "3",
-            "Name": "NTP Server List",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns a list of NTP Servers."
-          }
-        ]
-      }
-    }
-  }
-}
+										 <pre class="prettyprint lang-json" id="fileDisplayArea"><xmp>
+
 </xmp></pre>
 										</div>
 									</div>	
@@ -254,16 +202,6 @@
 </div>		
 </div>
 </div>
-
-
-<div id="upload">
-    <h2>Gimme Yo ODF Cornbread</h2>
-    <form enctype="multipart/form-data" method="post">
-        <input type="file" name="GatewaySystemxml" id="GatewaySystemxml" />
-    </form>
-</div>
-
-
 </div><!-- .container --> 
 <!-- models section --> 	
 </section>
@@ -344,18 +282,17 @@ xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
 document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
 
+window.onload = function() {
+
+	xmlhttp.open("GET","Gateway_System.xml",false);
+	xmlhttp.send();
+	xmlDoc=xmlhttp.responseXML;
+		
+	var fileDisplayArea = document.getElementById('fileDisplayArea');
+	fileDisplayArea.innerText = xmlDoc;
+}
 </script>
-<script>
-    $("#GatewaySystemxml").change(function(){
-        var file = document.getElementById("Gateway_System.xml").files[0];
-                    //You could insert a check here to ensure proper file type
-        var reader = new FileReader();
-        reader.readAsText(file);
-        reader.onloadend = function(){
-            var xmlData = $(reader.result);
-        };
-    });
-</script>
+
 
 
 </body>
