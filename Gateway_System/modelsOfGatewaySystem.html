@@ -223,8 +223,8 @@ xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
 window.onload = function() {
-		var fileInput = document.open(xmlHttp.responseText);
-		var fileDisplayArea = document.getElementById('fileDisplayArea');
+		var fileInput = document.write(xmlHttp.responseText);
+		var fileDisplayArea = document.getElementById("fileDisplayArea");
 
 		fileInput.addEventListener('change', function(e) {
 			var file = fileInput.files[0];
