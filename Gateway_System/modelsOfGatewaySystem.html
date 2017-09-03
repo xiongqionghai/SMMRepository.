@@ -222,7 +222,7 @@ xmlhttp.open("GET","Gateway_System.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
-document.getElementById('fileDisplayArea').innerText=
+document.getElementById('fileDisplayArea').innerHTML=
 xmlhttp.responseXML;
 	
 document.getElementById("Name").innerHTML=
