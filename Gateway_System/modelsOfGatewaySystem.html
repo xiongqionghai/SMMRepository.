@@ -227,11 +227,6 @@ var fileDisplayArea = document.getElementById('fileDisplayArea');
 var file = xmlhttp.open("GET","Gateway_System.xml",false);
 var reader = new FileReader();
 
-reader.onload = function() {
-		fileDisplayArea.innerText = reader.result;
-		reader.readAsText(file);	
-}
-
 
 
 document.getElementById("Name").innerHTML=
