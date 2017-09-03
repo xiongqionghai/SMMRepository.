@@ -92,7 +92,7 @@
 									<div class="panel-headings" role="tab" id="headingstwo">
 									<h4 class="panel-titles">
 									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsestwo" aria-expanded="false" aria-controls="collapsestwo">
-										Resources Fields  <span id="fileDisplayArea"></span>	
+										Resources Fields	
 									</a>
 									</h4>
 									</div>
@@ -179,7 +179,7 @@
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.json" download=""><img src="../images/dl.png" alt="download" /></a>
 										</div>
 										
-										 <pre class="prettyprint lang-xml"><xmp>
+										 <pre class="prettyprint lang-xml" id="fileDisplayArea"><xmp>
 										
 
 </xmp></pre>
@@ -222,6 +222,8 @@ xmlhttp.open("GET","Gateway_System.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 		
+document.getElementById("fileDisplayArea").innerHTML=
+xmlDoc.getElementsByTagName("Object")[0].childNodes[0].nodeValue;	
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 document.getElementById("Description1").innerHTML=
