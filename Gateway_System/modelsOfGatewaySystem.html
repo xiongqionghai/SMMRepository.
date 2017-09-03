@@ -224,16 +224,14 @@ xmlDoc=xmlhttp.responseXML;
 	
 
 
-var txt = '';
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function(){
-  if(xmlhttp.status == 200 && xmlhttp.readyState == 4){
-    txt = xmlhttp.responseText;
-  }
-};
-xmlhttp.open("GET","Gateway_System.xml",true);
-xmlhttp.send();
-
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+   if (xhr.readyState == 4 && xhr.status == 200) {
+       document.getElementById("placeholder").innerText = xhr.responseText;
+     }
+ }
+ xhr.open("GET", "Gateway_System.xml");
+ xhr.send();
 	
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
