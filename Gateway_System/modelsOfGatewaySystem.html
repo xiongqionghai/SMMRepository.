@@ -171,7 +171,7 @@
 				
 									<div class="panel-headings" role="tab" id="headingsfive">
 									<h4 class="panel-titles">
-									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfive" aria-expanded="false" aria-controls="collapsesfive">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfive" aria-expanded="false" aria-controls="collapsesfive" type="file" id="files" onchange="import();">
 										JSON
 									</a>
 									</h4>
@@ -282,15 +282,26 @@ xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
 document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
 
-window.onload = function() {
-
-	xmlhttp.open("GET","Gateway_System.xml",false);
-	xmlhttp.send();
-	xmlDoc=xmlhttp.responseXML;
 		
 	var fileDisplayArea = document.getElementById('fileDisplayArea');
-	fileDisplayArea.innerText = xmlDoc;
+	
+	$("#import").click(function(){//点击导入按钮，使files触发点击事件，然后完成读取文件的操作。
+        $("#files").click();
+    });
+	
+	
+	function import(){
+    var selectedFile = xmlhttp.open("GET","Gateway_System.xml",false);
+
+    var reader = new FileReader();//这里是核心！！！读取操作就是由它完成的。
+    reader.readAsText(selectedFile);//读取文件的内容
+
+    reader.onload = function(){
+        console.log(this.result);//当读取完成之后会回调这个函数，然后此时文件的内容存储到了result中。直接操作即可。
+		fileDisplayArea.innerText = reader.result;
+    };
 }
+
 </script>
 
 
