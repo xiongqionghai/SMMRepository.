@@ -178,7 +178,7 @@
 										<div style="text-align: right; margin-bottom:5px;">
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.json" download=""><img src="../images/dl.png" alt="download" /></a>
 										</div>
-										
+										<span id="placeholder"></span>
 										 <pre class="prettyprint lang-xml" id="fileDisplayArea"><xmp>
 										
 
@@ -222,8 +222,18 @@ xmlhttp.open("GET","Gateway_System.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
-document.getElementById('fileDisplayArea').innerHTML=
-xmlhttp.responseXML;
+
+
+var txt = '';
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function(){
+  if(xmlhttp.status == 200 && xmlhttp.readyState == 4){
+    txt = xmlhttp.responseText;
+  }
+};
+xmlhttp.open("GET","Gateway_System.xml",true);
+xmlhttp.send();
+
 	
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
