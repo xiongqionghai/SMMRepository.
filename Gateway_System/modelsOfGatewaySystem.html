@@ -57,7 +57,7 @@
  <div class="row">
 	<div class="col-md-8 col-md-offset-2 conForm">
 	<h4 id="Name"></h4>
-	<h3>This object defines the basic settings for a generic gateway</h3>
+	<h3 id="Description1"></h3>
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	    
 		<!-- LWM2M MODEL-->
@@ -85,7 +85,11 @@
 						<div id="collapseSOne" class="panel-collapse collapse" role="tabpane1" aria-labelledby="headingtSOne">
 							<div class="panel-body">
 							     <!-- object_file_sumcheck-->
-							    
+							     <div class="body-content">
+								
+									
+								
+								 </div>
 								<!-- object_file_Resources fields-->
 								<div class="body-content">
 									<div class="panel-headings" role="tab" id="headingstwo">
@@ -165,8 +169,75 @@
 									</div>	
 								</div>
 				
-									
-										
+									<div class="panel-headings" role="tab" id="headingsfive">
+									<h4 class="panel-titles">
+									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsesfive" aria-expanded="false" aria-controls="collapsesfive">
+										JSON
+									</a>
+									</h4>
+									</div>
+									<div id="collapsesfive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtsfive">
+										<div class="panel-bodys">
+										<div style="text-align: right; margin-bottom:5px;">
+										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.json" download=""><img src="../images/dl.png" alt="download" /></a>
+										</div>
+										 <pre class="prettyprint lang-json"><xmp>
+	     {
+  "LWM2M": {
+    "Object": {
+      "-ObjectType": "MODefinition",
+      "Name": "IPSO Gateway System",
+      "Description1": "This IPSO Object defines the basic settings for a generic gateway.",
+      "ObjectID": "1022",
+      "ObjectURN": "urn:oma:lwm2m:ext:1022",
+      "MultipleInstances": "Single",
+      "Mandatory": "Mandatory",
+      "Resources": {
+        "Item": [
+          {
+            "-ID": "0",
+            "Name": "Hostname",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the hostname of the gateway."
+          },
+          {
+            "-ID": "1",
+            "Name": "Timezone",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns the default timezone."
+          },
+          {
+            "-ID": "2",
+            "Name": "DNS Server List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of DNS Servers used by this system."
+          },
+          {
+            "-ID": "3",
+            "Name": "NTP Server List",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "Description": "This resource type returns a list of NTP Servers."
+          }
+        ]
+      }
+    }
+  }
+}
+</xmp></pre>
+										</div>
+									</div>	
 								</div>
 								
 								
