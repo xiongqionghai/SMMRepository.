@@ -223,11 +223,10 @@ xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
 window.onload = function() {
-		var fileInput = xmlDoc;
 		var fileDisplayArea = document.getElementById("fileDisplayArea");
 
 		fileInput.addEventListener('change', function(e) {
-			var file = fileInput.files[0];
+			var file = document.open("Gateway_System.xml");
 			var textType = /xml.*/;
 
 			if (file.type.match(textType)) {
