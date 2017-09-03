@@ -121,7 +121,7 @@
 												<tr>
 												    <td>0</td>
 													<td>0</td>
-													<td><span id="Operations1"></span></td>
+													<td id="Operations0"></td>
 													<td>No</td>
 													<td>Optional</td>
 													<td>String</td>
@@ -283,15 +283,21 @@ document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
 
+//get elements for resources table
 
+document.getElementById("Operations0").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[0].childNodes[0].nodeValue;
 document.getElementById("Operations1").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
+document.getElementById("Operations2").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[2].childNodes[0].nodeValue;
+document.getElementById("Operations3").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[3].childNodes[0].nodeValue;
 
 
+document.getElementById("MultipleInstances0").innerHTML=
+xmlDoc.getElementsByTagName("MultipleInstances")[0].childNodes[0].nodeValue;
 
-var res=xmlDoc.getElementsByTagName("Resources");
-document.getElementById("iname").innerHTML=
-res.getElementsByTagName("Operations")[0].childNodes[0].nodeValue;
 
 
 </script>
