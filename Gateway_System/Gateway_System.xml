@@ -20,7 +20,7 @@
             </Item>            
             <Item ID="1">
                 <Name>Timezone</Name>
-                <Operations>RW</Operations>
+                <Operations>R</Operations>
                 <MultipleInstances>Single</MultipleInstances>
                 <Mandatory>Optional</Mandatory>
                 <Type>String</Type>
