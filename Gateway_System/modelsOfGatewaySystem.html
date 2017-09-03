@@ -30,7 +30,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">EIT</a>
+				<a class="navbar-brand" href="#"><img src="../images/EIT.png" alt="" />EIT</a>
 			</div>
 	
 			<div class="navbar-collapse collapse move-me">
@@ -223,7 +223,7 @@ xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
 document.getElementById('fileDisplayArea').innerHTML=
-xmlhttp.responseXML(text);
+xmlhttp.responseXML;
 	
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
