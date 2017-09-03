@@ -95,7 +95,7 @@
 									<div class="panel-headings" role="tab" id="headingstwo">
 									<h4 class="panel-titles">
 									<a  class="collapsed" role="button" data-toggle="collapse" data-parent="#collapseSOne" href="#collapsestwo" aria-expanded="false" aria-controls="collapsestwo">
-										<span id="iname"></span>
+										<span id="Operations"></span>
 									</a>
 									</h4>
 									</div>
@@ -282,9 +282,12 @@ xmlDoc.getElementsByTagName("Description1")[0].childNodes[0].nodeValue;
 document.getElementById("ObjectURN").innerHTML=
 xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
+document.getElementById("Operations").innerHTML=
+xmlDoc.getElementsByTagName("Operations")[0].childNodes[0].nodeValue;
+
 var res=xmlDoc.getElementsByTagName("Resources");
 document.getElementById("iname").innerHTML=
-res.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+res.getElementsByTagName("Operations")[0].childNodes[0].nodeValue;
 
 
 </script>
