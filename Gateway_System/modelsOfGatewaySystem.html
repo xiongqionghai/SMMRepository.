@@ -221,9 +221,29 @@ xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 xmlhttp.open("GET","Gateway_System.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
-		
-document.getElementById("fileDisplayArea").innerHTML=
-xmlDoc.getElementsByTagName("Object")[0].childNodes[0].nodeValue;	
+	
+window.onload = function() {
+		var fileInput = document.open(xmlHttp.responseText);
+		var fileDisplayArea = document.getElementById('fileDisplayArea');
+
+		fileInput.addEventListener('change', function(e) {
+			var file = fileInput.files[0];
+			var textType = /xml.*/;
+
+			if (file.type.match(textType)) {
+				var reader = new FileReader();
+
+				reader.onload = function(e) {
+					fileDisplayArea.innerText = reader.result;
+				}
+
+				reader.readAsText(file);	
+			} else {
+				fileDisplayArea.innerText = "File not supported!"
+			}
+		});
+}
+	
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 document.getElementById("Description1").innerHTML=
