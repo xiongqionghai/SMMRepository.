@@ -223,12 +223,6 @@ xmlhttp.open("GET","Gateway_System.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
-var fileDisplayArea = document.getElementById('fileDisplayArea');
-var file = xmlhttp.open("GET","Gateway_System.xml",false);
-var reader = new FileReader();
-
-
-
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 document.getElementById("Description1").innerHTML=
