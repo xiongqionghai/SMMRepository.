@@ -223,7 +223,7 @@ xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
 document.getElementById('fileDisplayArea').innerHTML=
-xmlhttp.responseXML;
+xmlhttp.responseXML(text);
 	
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
