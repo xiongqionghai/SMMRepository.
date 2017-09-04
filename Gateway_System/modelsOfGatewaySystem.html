@@ -210,7 +210,7 @@
 										<div style="text-align: right; margin-bottom:5px;">
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.xml" download="Gateway_System"><img src="../images/dl.png" alt="download" /></a>
 										</div>
-											<pre class="prettyprint lang-xml" id="placeholder"><xmp></xmp></pre>
+										<pre class="prettyprint lang-xml" id="placeholder"></pre>
 										</div>
 									</div>	
 								</div>
@@ -229,7 +229,8 @@
 										<div style="text-align: right; margin-bottom:5px;">
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.json" download=""><img src="../images/dl.png" alt="download" /></a>
 										</div>
-											<pre class="prettyprint lang-json" id="placeholderJ"><xmp></xmp></pre>
+										 <pre class="prettyprint lang-json" id="placeholderJ"></pre>
+	     
 										</div>
 									</div>	
 								</div>
@@ -535,7 +536,6 @@
 <script src="../js/bootstrap.min.js"></script>  
 <script src="../js/main.js"></script>
 <script>
-
 if (window.XMLHttpRequest)
 {
 xmlhttp=new XMLHttpRequest();
@@ -544,7 +544,7 @@ else
 {
 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
-xmlhttp.open("GET","Gateway_System/Gateway_System.xml",false);
+xmlhttp.open("GET","Gateway_System.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
@@ -559,15 +559,16 @@ xhrxml.onreadystatechange = function() {
  xhrxml.open("GET", "Gateway_System.xml");
  xhrxml.send();
 
-//read JSON file
+//
 var xhrJson = new XMLHttpRequest();
 xhrJson.onreadystatechange = function() {
    if (xhrJson.readyState == 4 && xhrJson.status == 200) {
        document.getElementById("placeholderJ").innerText = xhrJson.responseText;
      }
  }
- xhrJson.open("GET", "Gateway_System/Gateway_System.json");
+ xhrJson.open("GET", "Gateway_System.json");
  xhrJson.send();
+ 
  
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
@@ -627,7 +628,6 @@ document.getElementById("Description2").innerHTML=
 xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
 document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
-	
 </script>
 </body>
 </html> 
