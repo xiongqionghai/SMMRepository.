@@ -210,7 +210,7 @@
 										<div style="text-align: right; margin-bottom:5px;">
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.xml" download="Gateway_System"><img src="../images/dl.png" alt="download" /></a>
 										</div>
-										<pre class="prettyprint lang-xml" id="placeholder">
+										<pre class="prettyprint lang-xml" id="placeholder"></pre>
 										</div>
 									</div>	
 								</div>
@@ -229,61 +229,7 @@
 										<div style="text-align: right; margin-bottom:5px;">
 										<a href="https://raw.githubusercontent.com/T4ACTIVE/T4ACTIVE.github.io/master/Model_List/Gateway_System/Gateway_System.json" download=""><img src="../images/dl.png" alt="download" /></a>
 										</div>
-										 <pre class="prettyprint lang-json"><xmp>
-	     {
-  "LWM2M": {
-    "Object": {
-      "-ObjectType": "MODefinition",
-      "Name": "IPSO Gateway System",
-      "Description1": "This IPSO Object defines the basic settings for a generic gateway.",
-      "ObjectID": "1022",
-      "ObjectURN": "urn:oma:lwm2m:ext:1022",
-      "MultipleInstances": "Single",
-      "Mandatory": "Mandatory",
-      "Resources": {
-        "Item": [
-          {
-            "-ID": "0",
-            "Name": "Hostname",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns the hostname of the gateway."
-          },
-          {
-            "-ID": "1",
-            "Name": "Timezone",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns the default timezone."
-          },
-          {
-            "-ID": "2",
-            "Name": "DNS Server List",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns a list of DNS Servers used by this system."
-          },
-          {
-            "-ID": "3",
-            "Name": "NTP Server List",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "Description": "This resource type returns a list of NTP Servers."
-          }
-        ]
-      }
-    }
-  }
-}
-</xmp></pre>
+										 <pre class="prettyprint lang-xml" id="placeholderJ"></pre>
 										</div>
 									</div>	
 								</div>
@@ -602,16 +548,26 @@ xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
 
-
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-   if (xhr.readyState == 4 && xhr.status == 200) {
-       document.getElementById("placeholder").innerText = xhr.responseText;
+//read XML file
+var xhrxml = new XMLHttpRequest();
+xhrxml.onreadystatechange = function() {
+   if (xhrxml.readyState == 4 && xhrxml.status == 200) {
+       document.getElementById("placeholder").innerText = xhrxml.responseText;
      }
  }
- xhr.open("GET", "Gateway_System.xml");
- xhr.send();
-	
+ xhrxml.open("GET", "Gateway_System.xml");
+ xhrxml.send();
+
+//
+var xhrJson = new XMLHttpRequest();
+xhrJson.onreadystatechange = function() {
+   if (xhrJson.readyState == 4 && xhrJson.status == 200) {
+       document.getElementById("placeholderJ").innerText = xhrJson.responseText;
+     }
+ }
+ xhrJson.open("GET", "Gateway_System.json");
+ xhrJson.send();
+ 
 document.getElementById("Name").innerHTML=
 xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 document.getElementById("Description1").innerHTML=
