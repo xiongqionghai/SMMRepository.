@@ -124,7 +124,7 @@
 											  </thead>
 											  <tbody>
 												<tr>
-												    <td id="rname"></td>
+												    <td id="rname0"></td>
 													<td>0</td>
 													<td id="Operations0"></td>
 													<td id="MultipleInstances0"></td>
@@ -135,7 +135,7 @@
 													<td id="Description0"></td>
 												</tr>
 												<tr>
-												    <td>Timezone</td>
+												    <td id="rname1"></td>
 													<td>1</td>
 													<td id="Operations1"></td>
 													<td id="MultipleInstances1"></td>
@@ -146,7 +146,7 @@
 													<td id="Description01"></td>
 												</tr>
 												<tr>
-												    <td>DNS Server List</td>
+												    <td id="rname2"></td>
 													<td>2</td>
 													<td id="Operations2"></td>
 													<td id="MultipleInstances2"></td>
@@ -157,7 +157,7 @@
 													<td id="Description2"></td>
 												</tr>
 												<tr>
-												    <td>NTP Server List</td>
+												    <td id="rname3"></td>
 													<td>3</td>
 													<td id="Operations3"></td>
 													<td id="MultipleInstances3"></td>
@@ -571,10 +571,17 @@ xmlDoc.getElementsByTagName("ObjectURN")[0].childNodes[0].nodeValue;
 
 
 //get elements for resources table
-//Operations value
-
-document.getElementById("rname").innerHTML=
+//name value
+document.getElementById("rname0").innerHTML=
 xmlDoc.getElementsByTagName("Name")[1].childNodes[0].nodeValue;
+document.getElementById("rname1").innerHTML=
+xmlDoc.getElementsByTagName("Name")[2].childNodes[0].nodeValue;
+document.getElementById("rname2").innerHTML=
+xmlDoc.getElementsByTagName("Name")[3].childNodes[0].nodeValue;
+document.getElementById("rname3").innerHTML=
+xmlDoc.getElementsByTagName("Name")[4].childNodes[0].nodeValue;
+
+//Operations value
 document.getElementById("Operations0").innerHTML=
 xmlDoc.getElementsByTagName("Operations")[1].childNodes[0].nodeValue;
 document.getElementById("Operations1").innerHTML=
@@ -625,4 +632,4 @@ document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
 </script>
 </body>
-</html>
+</html> 
