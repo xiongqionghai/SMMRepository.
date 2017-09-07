@@ -51,18 +51,17 @@
 <!-- models section -->
 <section id="contact" class="section">
 <div class="container">
- <div class="row">
+<div class="row">
 	<div class="col-md-8 col-md-offset-2 conForm">
- 		<div style="float: left">
- 			<h4 id="Name"></h4>
+		<div style="float: left">
+			<h4 id="Name"></h4>
 			<h3 id="Description1"></h3>	
- 		</div>
- 
+		</div>
 		<div style="float: right">
-		<button style="background-color: white; margin-bottom:20px; margin-top:0px; border: 0px;" href="https://github.com/Hanningz/SMMRepository./tree/master/Gateway_System">
-			<i class="fa fa-github fa-2x" aria-hidden="true"></i><p>view on GitHub</p></button>
-		<button style="background-color: white; margin-bottom:20px; margin-top:0px; border: 0px;">
-			<i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i><p>download files</p></button>
+			<a href="https://github.com/Hanningz/SMMRepository./tree/master/Gateway_System">
+			<i style="color: #999292;" class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+			<a onclick="downloadAll(window.links)">
+			&nbsp;<i style="color: #999292;" class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></a>
 		</div>
 	</div>
 	<div class="col-md-8 col-md-offset-2 conForm">	
@@ -641,6 +640,23 @@ document.getElementById("Description2").innerHTML=
 xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
 document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
+	
+//download files
+var links = [
+'https://github.com/Hanningz/SMMRepository./blob/master/Gateway_System/Gateway_System.xml',
+'https://github.com/Hanningz/SMMRepository./blob/master/Gateway_System/Gateway_System.json'
+];
+function downloadAll(urls) {
+var link = document.createElement('a');
+link.setAttribute('download', null);
+link.style.display = 'none';
+document.body.appendChild(link);
+for (var i = 0; i < urls.length; i++) {
+link.setAttribute('href', urls[i]);
+link.click();
+}
+document.body.removeChild(link);
+}
 </script>
 </body>
 </html> 
