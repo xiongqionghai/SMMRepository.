@@ -687,6 +687,7 @@ background-color: #fff;
 
 
 #accordion .panel-bodys{
+ word-break:break-all;
  font-size: 12px;
  background: #fff;
  padding: 12px 15px;
