@@ -287,16 +287,16 @@ ul li {
 
 .notice {
 	
-	margin-left: auto;
-	margin-right: auto;
-    padding: px;
-	font-size: 15px;
-    height: 100px;
-	width: 100%;
-	border:1px solid #f0f0f0;
-    border-left: 6px solid #A9A9A9;
-    margin-bottom: 10px;
-	border-radius: 5px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: px;
+   font-size: 15px;
+   height: 100%;
+   width: 100%;
+   border:1px solid #f0f0f0;
+   border-left: 6px solid #A9A9A9;
+   margin-bottom: 10px;
+   border-radius: 5px;
 	
     -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
@@ -305,24 +305,22 @@ ul li {
 
 .notice-lg {
 	
-	text-align:left;
+    text-align:left;
     padding: 20px;
     font-size: large;
-	padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 
 .notice-lg>strong {
-	
-    color: #009FCC;
-	font-size: 20px;
+    	color: #009FCC;
+    	font-size: 20px;
 	margin-bottom:10px;
 	
 }
 
 .notice-lg>p {
-	
-    color: gray;
+    	color: gray;
 	font-size: 18px;
 	margin-top: 10px;
 	
@@ -335,13 +333,12 @@ ul li {
 	
 }
 
-
 .des{
 	
 	border:0px solid white;
 	border-left: 6px solid #20B2AA;
-    padding: 20px;
-    font-size: large;
+    	padding: 20px;
+    	font-size: large;
 	height: 80px;
 	width:1000;
 	text-align:left;
@@ -350,8 +347,9 @@ ul li {
 
 .des p{
 	
-	font-size:30px;
+	font-size:28px;
 }
+
 
 .conForm {
 	text-align: center;
