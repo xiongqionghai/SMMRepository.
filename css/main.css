@@ -296,7 +296,7 @@ ul li {
    border:1px solid #f0f0f0;
    border-left: 6px solid #A9A9A9;
    margin-bottom: 10px;
-   border-radius: 5px;
+   border-radius: 2px;
 	
     -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
@@ -306,23 +306,26 @@ ul li {
 .notice-lg {
 	
     text-align:left;
-    padding: 20px;
+    padding-top: 10px;
+	padding-left: 20px;
     font-size: large;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 
-.notice-lg>strong {
+.notice-lg .name { 
     	color: #009FCC;
     	font-size: 20px;
-	margin-bottom:10px;
+	margin-bottom: 10px;
+	text-align: left;
+	font-weight: bold;
 	
 }
 
 .notice-lg>p {
     	color: gray;
 	font-size: 18px;
-	margin-top: 10px;
+	margin-top: 5px;
 	
 }
 
@@ -379,6 +382,13 @@ ul li {
 	font-weight: bold;
 }
 
+.conForm h6 {
+	font-size: 16px;
+	color:gray;
+	text-align: left;
+	font-weight: ;
+}
+
 .conForm h2 {
 	font-size: 20px;
 	color:gray;
@@ -394,10 +404,13 @@ ul li {
 	margin-top: 30px;
     font-weight: normal;
 	text-align: left;
-	margin-bottom: 12px;
-	Padding-bottom: 40px;
+	margin-bottom: 32px;
+	
 	
 }
+
+
+
 
 .conForm h1 {
 	
@@ -718,7 +731,3 @@ th {
 tr:nth-of-type(odd) { 
   background: #eee; 
 }
-
-
-	
-
