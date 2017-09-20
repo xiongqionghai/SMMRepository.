@@ -1,4 +1,4 @@
-function print(){
+function Read_model_files(){
 
 alert("Thanks for your contribution");  
 	
