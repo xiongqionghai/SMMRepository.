@@ -8,7 +8,7 @@ else
 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
 var urlXml = "Gateway_System.xml";
-xmlhttp.open("GET",urlXml,false);
+xmlhttp.open("GET","Gateway_System.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
@@ -19,7 +19,7 @@ xhr.onreadystatechange = function() {
        document.getElementById("placeholder").innerText = xhr.responseText;
      }
  }
- xhr.open("GET", urlXml);
+ xhr.open("GET", "Gateway_System.xml");
  xhr.send();
 
 	
