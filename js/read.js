@@ -29,7 +29,7 @@ xhrJson.onreadystatechange = function() {
        document.getElementById("placeholderJ").innerText = xhrJson.responseText;
      }
  }
- xhrJson.open("GET", "../Gateway_System/Gateway_System.json");
+ xhrJson.open("GET", "");
  xhrJson.send();	
 		
 document.getElementById("Name").innerHTML=
