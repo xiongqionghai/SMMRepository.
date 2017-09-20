@@ -1,3 +1,4 @@
+
 if (window.XMLHttpRequest)
 {
 xmlhttp=new XMLHttpRequest();
@@ -6,7 +7,8 @@ else
 {
 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
-xmlhttp.open("GET","Gateway_System.xml",false);
+var urlXml = "Gateway_System.xml";
+xmlhttp.open("GET",urlXml,false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
