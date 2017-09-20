@@ -7,7 +7,7 @@ else
 {
 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
-var urlXml = "https://raw.githubusercontent.com/Hanningz/SMMRepository./master/Gateway_System/Gateway_System.xml";
+var urlXml = "../Gateway_System/Gateway_System.xml";
 xmlhttp.open("GET",urlXml,false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
