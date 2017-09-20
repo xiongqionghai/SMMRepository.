@@ -1,6 +1,7 @@
-
 function print(){
 
+alert("Thanks for your contribution");  
+	
 if (window.XMLHttpRequest)
 {
 xmlhttp=new XMLHttpRequest();
