@@ -19,7 +19,7 @@ xhr.onreadystatechange = function() {
        document.getElementById("placeholder").innerText = xhr.responseText;
      }
  }
- xhr.open("GET", "Gateway_System.xml");
+ xhr.open("GET", urlXml);
  xhr.send();
 
 	
