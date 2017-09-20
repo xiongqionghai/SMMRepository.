@@ -6,8 +6,8 @@ else
 {
 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
-var urlXml[] = "Gateway_System.xml";
-xmlhttp.open("GET",urlXml[],false);
+var urlXml = "Gateway_System.xml";
+xmlhttp.open("GET",urlXml,false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 	
