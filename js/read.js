@@ -1,3 +1,6 @@
+
+function print(){
+
 if (window.XMLHttpRequest)
 {
 xmlhttp=new XMLHttpRequest();
@@ -6,7 +9,11 @@ else
 {
 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 }
+
+
+
 var urlXml = document.getElementById("textm").value;
+
 xmlhttp.open("GET",urlXml,false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
@@ -18,7 +25,7 @@ xhr.onreadystatechange = function() {
        document.getElementById("placeholder").innerText = xhr.responseText;
      }
  }
- xhr.open("GET", urlXml);
+ xhr.open("GET", "Gateway_System.xml");
  xhr.send();
 
 	
@@ -29,7 +36,7 @@ xhrJson.onreadystatechange = function() {
        document.getElementById("placeholderJ").innerText = xhrJson.responseText;
      }
  }
- xhrJson.open("GET", "");
+ xhrJson.open("GET", "Gateway_System.json");
  xhrJson.send();	
 		
 document.getElementById("Name").innerHTML=
@@ -101,3 +108,4 @@ document.getElementById("Description2").innerHTML=
 xmlDoc.getElementsByTagName("Description")[2].childNodes[0].nodeValue;
 document.getElementById("Description3").innerHTML=
 xmlDoc.getElementsByTagName("Description")[3].childNodes[0].nodeValue;
+}
