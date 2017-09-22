@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
@@ -19,15 +20,15 @@
 <!-- header section -->
 <section class="navpart">
   <header id="header">
-		<div class="navbar navbar-inverse navbar-fixed-top " id="menu">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href=""><img src="images/EIT.png" alt="" /></a>
+     <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+     	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href=""><img src="images/EIT.png" alt="" /></a>
 			</div>
 		
 			<div class="navbar-collapse collapse move-me" id="">
@@ -46,147 +47,145 @@
   </header>
   <!-- banner text -->
 </section>
-<!-- header section --> 
 
 <!-- models section -->
 <section id="contact" class="section" style="text-align:center;">
 <div id="accordion" role="tablist" aria-multiselectable="true">
 <div class="container">
-<div id="test-list">
+<div id="mlist">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 conForm">
 			<h4>Welcome to the ACTIVE Data Model Repository</h4>
-			<h3>Reusable objects and object definitions are listed below</h3> 
-			<input style="width: 50%; float: left; margin-bottom: 30px;" type="text" class="search" placeholder="search your model here..." />
-			
+			<h3>Reusable objects and object definitions are listed below</h3>
+			<div class="ser">
+			<i class="fa fa-search fa-1x" aria-hidden="true"></i>
+			<input type="text" class="search" placeholder="search your model here by name, id or keyword..." />
+			</div>
 		</div> 		
 	</div>
 
     <ul class="list">
-	<li>
+    <li>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 conForm">
 			<a href="Gateway_System/modelsOfGatewaySystem.html">
 			<div class="notice notice-lg">
-			<h4><span class="name"><strong>Gateway System</strong></span></h4> 
-			<p class="description">Example Gateway Application Object describing base system</p>
-			</div> 
+			<h4><span class="name"><strong>1022 Gateway System</strong></span></h4> 
+			<p class="description">Example Gateway Application Object describing base system</P>
 			</a>
 		</div>
 	</div>
     </li>	
 	
-	<li>
+    <li>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
+	<div class="col-md-8 col-md-offset-2 conForm">
         <a href="#">
           <div class="notice notice-lg">
-			<h4><span class="name"><strong>Gateway Wireless</strong></span></h4>
-			<p class="description">Example Gateway Application Object for representing wireless IP interfaces</P>
-	     </div> 
+	  	<h4><span class="name"><strong>1025 Gateway Wireless</strong></span></h4>
+		<p class="description">Example Gateway Application Object for representing wireless IP interfaces</P>
+	  </div> 
         </a>
-		</div>
 	</div>
-	</li>
+	</div>
+    </li>
 
-	<li>	
+    <li>	
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
+	<div class="col-md-8 col-md-offset-2 conForm">
         <a href="#">
           <div class="notice notice-lg">
-			<h4><span class="name"><strong>PAN Interface</strong></span></h4>
-			<p class="description">Generic object for modelling endpoint or gateway PAN interfaces, such as Bluetooth, BLE and Zigbee</P>
-	      </div> 
+		<h4><span class="name"><strong>PAN Interface </strong></span></h4>
+		<p class="description">Generic object for modelling endpoint or gateway PAN interfaces, such as Bluetooth, BLE and Zigbee</P>
+	  </div> 
         </a>
         </div>
-    </div>
-	</li>
+        </div>
+    </li>
 	
-	<li>
+    <li>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
+	<div class="col-md-8 col-md-offset-2 conForm">
         <a href="#">
           <div class="notice notice-lg">
-			<h4><span class="name"><strong>BLE GATT</strong></span></h4>
-			<p class="description">Generic object for proxies to expose BLE services</P>
-	      </div> 
+		<h4><span class="name"><strong>BLE GATT</strong></span></h4>
+		<p class="description">Generic object for proxies to expose BLE services</P>
+	  </div> 
         </a>
         </div>
-    </div>
-	</li>
+        </div>
+    </li>
 	
-	<li>
+     <li>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
+	<div class="col-md-8 col-md-offset-2 conForm">
         <a href="#">
           <div class="notice notice-lg">
-			<h4><span class="name"><strong>EMM Integrator</strong></span></h4>
-			<p class="description">Object for defining the components of an Energy Measurement Module</P>
-	      </div> 
+		<h4><span class="name"><strong>25010 EMM Integrator</strong></span></h4>
+		<p class="description">Object for defining the components of an Energy Measurement Module</P>
+	  </div> 
         </a>
         </div>
-    </div>
-	</li>
+        </div>
+     </li>
 	
-	<li>
+      <li>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
+	<div class="col-md-8 col-md-offset-2 conForm">
         <a href="#">
           <div class="notice notice-lg">
-			<h4><span class="name"><strong>Log Control</strong></span></h4>
-			<p class="description">Controls the log handling for the sensor data</P>
-	      </div> 
+		<h4><span class="name"><strong>25011 Log Control</strong></span></h4>
+		<p class="description">Controls the log handling for the sensor data</P>
+	  </div> 
         </a>
         </div>
-    </div>
-	</li>
+        </div>
+     </li>
 	
-	<li>
+     <li>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
+	<div class="col-md-8 col-md-offset-2 conForm">
         <a href="#">
           <div class="notice notice-lg">
-			<h4><span class="name"><strong>Device Binding</strong></span></h4>
-			<p class="description">Connects the EMM to the device it measures</P>
-	      </div> 
+		<h4><span class="name"><strong>25012 Device Binding</strong></span></h4>
+		<p class="description">Connects the EMM to the device it measures</P>
+	  </div> 
         </a>
         </div>
-    </div>	
-	</li>
+    	</div>	
+     </li>
 	
-		<li>
+     <li>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
+	<div class="col-md-8 col-md-offset-2 conForm">
         <a href="#">
           <div class="notice notice-lg">
-			<h4><span class="name"><strong>New model A</strong></span></h4>
-			<p class="description">descriptions of model and information</P>
+		<h4><span class="name"><strong>New model A</strong></span></h4>
+		<p class="description">descriptions of modelA and information</P>
 	      </div> 
         </a>
         </div>
-    </div>	
-	</li>
+        </div>	
+     </li>
 	
-	<li>
+     <li>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
+	<div class="col-md-8 col-md-offset-2 conForm">
         <a href="#">
           <div class="notice notice-lg">
-			<h4><span class="name"><strong>New model B</strong></span></h4>
-			<p class="description">descriptions of model and information</P>
+		<h4><span class="name"><strong>New model B</strong></span></h4>
+		<p class="description">descriptions of modelB and information</P>
 	      </div> 
         </a>
         </div>
-    </div>	
-	</li>
+    	</div>	
+     </li>
 </ul>
 <ul class="pagination"></ul>
 </div>
 </div>
 </div>
 </section>						 
-
-<!-- models section --> 
 
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
@@ -195,7 +194,7 @@
 <script src="js/list.js"></script>
 <script src="js/list.page.js"></script>
 <script type="text/javascript">
-	var monkeyList = new List('test-list', {
+	var modellist= new List('mlist', {
 	  valueNames: ['name', 'description'],
 	  page: 7,
 	  plugins: [ ListPagination({}) ] 
