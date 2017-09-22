@@ -118,6 +118,7 @@ a:hover, a:focus {
 	-webkit-transition: background-color, color, 0.3s;
 	transition: background-color, color, 0.3s;
 }
+
 body {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 400;
@@ -284,12 +285,41 @@ ul li {
 /* ------------------------------------------------------------------------------
 	Models list
 -------------------------------------------------------------------------------*/
+.ser {
+
+	position: relative; 
+}
+
+.search {
+	
+	width: 70%; 
+	float: left; 
+	margin-bottom: 30px; 
+	height:32px; 
+	line-height: 32px;
+	border-radius: 2px;
+	border: 1px solid #E0E0E0;
+	padding-left: 26px;
+	padding-top: 4px;
+	padding-right: 10px;
+
+}
+
+.fa {
+
+	position: absolute; 
+	left: 0; 
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	color: #C0C0C0;
+
+}
 
 .notice {
 	
    margin-left: auto;
    margin-right: auto;
-   padding: px;
    font-size: 15px;
    height: 100%;
    width: 100%;
@@ -370,14 +400,12 @@ ul li {
 .conForm h5 {
 	font-size: 35px;
 	margin-top:100px;
-	color:gray;
+	color: #787878;
 }
 
-
-
 .conForm h4 {
-	font-size: 22px;
-	color:gray;
+	font-size: 20px;
+	color: #787878;
 	text-align: left;
 	font-weight: bold;
 }
@@ -386,7 +414,6 @@ ul li {
 	font-size: 16px;
 	color:gray;
 	text-align: left;
-	font-weight: ;
 }
 
 .conForm h2 {
@@ -405,12 +432,7 @@ ul li {
     font-weight: normal;
 	text-align: left;
 	margin-bottom: 32px;
-	
-	
 }
-
-
-
 
 .conForm h1 {
 	
@@ -422,7 +444,7 @@ ul li {
 
 .conForm p {
 	
-	color:gray;
+	color: #787878;
 	font-size: 15px;
 	text-align: left;	
 }
@@ -494,9 +516,7 @@ a:hover,a:focus{
  height:50px;
  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
-            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
- 
- 
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2); 
 }
  
 #accordion .panel:hover {
@@ -710,7 +730,6 @@ background-color: #fff;
 #accordion .body-content{
 	 margin-bottom: 15px;
 }
-
 
 #accordion .panel-body:after{
  content: "";
