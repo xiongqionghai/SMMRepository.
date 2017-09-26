@@ -10,24 +10,29 @@ p {
 	line-height: 22.4px;
 	color: #6c7279;
 }
+
 h1 {
 	font-size: 50px;
 	color: #2d3033;
 }
+
 h2 {
 	font-size: 40px;
 	color: #2d3033;
 }
+
 h3 {
 	font-size: 28px;
 	color: #2d3033;
 	font-weight: 300;
 }
+
 h4 {
 	font-size: 22px;
 	color: #2d3033;
 	font-weight: 400;
 }
+
 h5 {
 	font-size: 14px;
 	color: #2d3033;
@@ -43,7 +48,7 @@ h5 {
 	border: 0;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
-	border-radius: 2px;
+	border-radius: 3px;
 	display: inline-block;
 	text-transform: uppercase;
 }
@@ -51,6 +56,7 @@ h5 {
 .btn:hover, .btn:focus {
 	background-color: #3d3d3d;
 	color: #C0C0C0;
+
 }
 
 
@@ -63,14 +69,17 @@ h5 {
 
 .btn-large.an {
 	
-	background-color: gray;
+    border: 2px solid #FFFFFF;
 	padding: 15px 40px;
 	margin-right: 8px;
 	margin-bottom: 25px;
+	background-color: transparent; 
+	padding: 15px 30px;
 }
 
 .btn-large.bn {
-	
+
+	border: 2px solid #3bc492;
 	background-color: #3bc492;
 	padding: 15px 40px;
 	margin-right: 8px;
@@ -89,19 +98,11 @@ h5 {
 
 .btn-large.tr {
 	
-	background-color: #20B2AA;
-	padding: 15px 40px;
+	border: ;
+	background-color:  #3bc492; 
 	margin-right: 8px;
-	margin-bottom: 0px;
-}
-
-.btn-large.tn {
 	
-	background-color: #20B2AA;
-	padding: 15px 40px;
-	margin-right: 8px;
-	margin-top: 8px;
-	margin-bottom: 30px;
+
 }
 
 
@@ -120,10 +121,13 @@ a:hover, a:focus {
 }
 
 body {
+
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 400;
 	color: #6c7279;
+	background-color: ;
 }
+
 ul, ol {
 	margin: 0;
 	padding: 0;
@@ -170,13 +174,15 @@ ul li {
     min-height: 100px;
 	
 }
+
 .logo-custom {
     max-height: 40px;
 	
 }
 
 .navbar-brand{
-	margin-top: 5px;
+	margin-top: 2px;
+
 }
 
 .navbar-inverse .navbar-nav {
@@ -210,7 +216,7 @@ ul li {
 
 .navbar-inverse .navbar-nav > li > a:hover,  
 .navbar-inverse .navbar-nav > li > a:focus {  
-     color: #20B2AA;  
+     color: #00CED1;
       
 }  
 
@@ -220,13 +226,11 @@ ul li {
 }  
 
 
-
 .navbar-inverse .navbar-nav > li .active { 
 	 
 	 background-color:#fff;
 	 
 } 
-
 
 
 /* ------------------------------------------------------------------------------
@@ -321,7 +325,7 @@ ul li {
    margin-left: auto;
    margin-right: auto;
    font-size: 15px;
-   height: 100%;
+   height: 60%;
    width: 100%;
    border:1px solid #f0f0f0;
    border-left: 6px solid #A9A9A9;
@@ -336,25 +340,37 @@ ul li {
 .notice-lg {
 	
     text-align:left;
-    padding-top: 10px;
-	padding-left: 20px;
+   
+	padding-left: 16px;
     font-size: large;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 
 .notice-lg .name { 
     	color: #009FCC;
-    	font-size: 20px;
-	margin-bottom: 10px;
+    	font-size: 18px;
+	margin-bottom: 5px;
 	text-align: left;
 	font-weight: bold;
 	
 }
 
+
+.notice-lg .id { 
+    color: #009FCC;
+    font-size: 16px;
+	margin-bottom: 5px;
+	text-align: left;
+	font-weight: bold;
+	
+}
+
+
 .notice-lg>p {
+
     	color: gray;
-	font-size: 18px;
+	font-size: 20px;
 	margin-top: 5px;
 	
 }
@@ -366,21 +382,99 @@ ul li {
 	
 }
 
-.des{
+
+.contr p{
 	
-	border:0px solid white;
-	border-left: 6px solid #20B2AA;
-    	padding: 20px;
-    	font-size: large;
-	height: 80px;
-	width:1000;
-	text-align:left;
+	color: #787878;
+	font-size: 15px;
+	text-align: left;
+
+}
+
+
+.des h1 {
+
+	font-size: 22px;
+	color: #787878;
+	text-align: left;
+	font-weight: bold;
+	padding: 10px;
+	padding-top: 4px;
+	margin-bottom: 20px;
+
+}
+
+
+.contr {
+
+	margin-bottom: 34px;
+
+}
+
+
+.contr h4{
+
+	font-size: 26px;
+	color: #787878;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 30px;
 	
 }
 
-.des p{
+.contr h5{
+
+	font-size: 12px;
+	color: #787878;
+	text-align: center;
 	
-	font-size:28px;
+}
+
+
+.des {
+	
+	border:0px solid white;
+	border-left: 6px solid #20B2AA;
+	height: 30px;
+	width: 100%;
+	text-align: left;	
+	margin-bottom: 20px;
+}
+
+
+.desm {
+	
+	border:0px solid white;
+	border-left: 6px solid #20B2AA;
+	height: 60px;
+	width: 100%;
+	text-align: left;	
+	margin-bottom: 20px;
+}
+
+
+.desm p {
+	
+	padding-left: 10px;
+	padding-top: 8px;
+	text-align: left;	
+	
+}
+
+
+.contents {
+
+	margin-left: 30%;
+	margin-bottom: 10px;
+	border: 1px solid #fff;
+	width: 54px;
+	height: 54px;
+
+}
+
+.part {
+
+	margin-top: 30px;
 }
 
 
@@ -388,6 +482,7 @@ ul li {
 	text-align: center;
 	
 }
+
 
 .navpart{
 	margin-bottom: 80px;
@@ -404,14 +499,15 @@ ul li {
 }
 
 .conForm h4 {
-	font-size: 20px;
+	font-size: 26px;
 	color: #787878;
 	text-align: left;
 	font-weight: bold;
+	
 }
 
 .conForm h6 {
-	font-size: 16px;
+	font-size: 15px;
 	color:gray;
 	text-align: left;
 }
@@ -420,7 +516,6 @@ ul li {
 	font-size: 20px;
 	color:gray;
 	text-align: center;
-	
 	margin: 7%;
 	
 }
@@ -481,7 +576,9 @@ ul li {
 
 .rotate-box-info h2{
 	color:#00CED1;
+	font-weight: bold;
 }
+
 
 /* ------------------------------------------------------------------------------
 	singlemodel Style
@@ -500,9 +597,9 @@ a:hover,a:focus{
  margin-left: auto;
  margin-right: auto;
  width:100%;
- 
 }
  
+
 #accordion .panels{
  
  margin-left: auto;
@@ -513,7 +610,7 @@ a:hover,a:focus{
  background-color: #fff;
  border-radius: 5;
  margin-bottom: 10px;
- height:50px;
+ 
  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2); 
@@ -566,7 +663,6 @@ a:hover,a:focus{
  background-color: #fff;
  border-left: 6px solid #7f7f84; 
  
- 
   -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
@@ -580,9 +676,8 @@ a:hover,a:focus{
  border-radius: 5;
  text-align: center;
  background-color: #fff;
-
  border-left: 6px solid #20B2AA; 
- 
+
   -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
@@ -596,7 +691,8 @@ a:hover,a:focus{
  background-color: #fff;
  border-radius: 5;
  margin-bottom: 10px;
- height:50px;
+ height: 50px;
+ width: 30%;
  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
@@ -626,7 +722,7 @@ a:hover,a:focus{
  background-color: #fff;
  border-radius: 5;
  margin-bottom: 10px;
-
+ 
  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
@@ -658,6 +754,12 @@ a:hover,a:focus{
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
  
+}
+
+
+#accordion .panel-title {
+
+
 }
 
 #accordion .panel-title a{
@@ -730,6 +832,7 @@ background-color: #fff;
 #accordion .body-content{
 	 margin-bottom: 15px;
 }
+
 
 #accordion .panel-body:after{
  content: "";
