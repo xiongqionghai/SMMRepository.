@@ -9,8 +9,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/font-icon.css">
-<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
@@ -33,10 +32,10 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li class="home"><a href="index.html">HOME</a></li>
 					<li class="models"><a href="models.html">MODELS</a></li>
-					<li class="contributors"><a href="contributors.html"><font color="#20B2AA">CONTRIBUTORS</font></a></li>
-					<li class="aboutus"><a href="AboutUs.html">ABOUT US</a></li>
+					<li class="contributors"><a href="contributors.html"><font color="#00CED1">CONTRIBUTORS</font></a></li>
+					<li class="aboutus"><a href="aboutUs.html">ABOUT US</a></li>
 					<li>
-						<a class="btn  btn-large tr" href="https://github.com/Hanningz/SMMRepository.">View GitHub</a>
+						<a class="btn btn-large tr" href="https://github.com/Hanningz/SMMRepository.">View GitHub</a>
 					</li>
 				</ul>
 			</div>   
@@ -50,24 +49,63 @@
 <!-- content section -->
 <section id="contact" class="section">
   <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2 conForm">
-        <div class="des">
-	   	<p> 
-Contributors are encouraged to first design their domain-specific data models using online data models supplied by the relevant SDOs, if possible. These definitions, as well as files containing implementation code as well as html code, can then be submitted to the Meta Model Repository as a pull request.
-</p>
-		
-	   </div>
-    </div>
-  </div>
-</div>
-</section>						 
 
-<!-- content section --> 
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 contr">
+		   	<h4>Let's contribute</h4>
+		   	<p>Currently, since the Meta Model Repository is hosted on GitHub platform, all contribution work will be suggested to be done by pull request, which means contributors can submitted definition as well as files containing implementation code related to new data models to the Meta Model Repository through pull request on GitHub.</p>
+    	</div>
+  	</div>
+  
+
+    <!-- information of why choose pull request and how -->
+  	
+		<div class="col-md-8 col-md-offset-2 contr">
+			 <div class="des">
+				   	<h1>Why pull request</h1>   	
+			 </div>
+
+			<div style="margin-top: 40px;">
+				<div class="col-md-4 part">
+					<div class="contents"><img src="images/git.png" class="img-responsive"></div>
+					<p> universal platform for software development, no extra account needed</p>						
+				</div>
+
+			 	<div class="col-md-4 part">
+					<div class="contents"><img src="images/check.png" class="img-responsive" style="padding-top: 7px; padding-left: 5px;"></div>
+					<p>quality guarantee for data models by merging request with checking</p>						
+				</div>
+
+				<div class="col-md-4 part">
+					<div class="contents"><img src="images/discuss.png" class="img-responsive" style="padding-top: 6px; padding-left: 5px;"></div>
+					<p>facilitate in communication among contributors and owners</p>				
+				</div>
+			</div>
+		</div>
+	
+        <div class="col-md-8 col-md-offset-2 contr">
+	        <div class="des">
+		   		<h1>How to contribute</h1>
+		    </div>
+		   	<p>Once contributors have domain-special data model, they could follow steps as below to contribute: </p>
+			<img src="images/process.png" class="img-responsive">
+
+			<p>After merging, the contributor could see the models on web page soon. Let's <a href="https://github.com/Hanningz/SMMRepository." style="font-size: 15px; font-weight: bold; color: #00CED1; "> get started</a>.</p>
+	    </div>
+  	
+        <div class="col-md-8 col-md-offset-2 contr">
+	        <div class="des">
+		   		<h1>For Enterprises use</h1>
+		    </div>
+		   	<p style="display: inline-block;">Additionally, enterprises or originations could fork the repository for their own use. After forking, you can customize repository purposely. Since the limitation of GitHub page, for example, no database could be attached, at this moment you need to maintain the new models which from pull request by creating html page manually, more instruction and template of html code can be found 
+		   	<a href="https://github.com/Hanningz/SMMRepository." style="font-size: 15px; font-weight: bold; color: #00CED1; ">here</a>.</p>
+	    </div>
+</div>
+</section>				
+
 
 <!-- JS FILES --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script>  
-<script src="js/main.js"></script>
 </body>
 </html>
