@@ -340,8 +340,7 @@ ul li {
 .notice-lg {
 	
     text-align:left;
-   
-	padding-left: 16px;
+    padding-left: 10px;
     font-size: large;
     padding-bottom: 5px;
 }
@@ -352,20 +351,16 @@ ul li {
     	font-size: 18px;
 	margin-bottom: 5px;
 	text-align: left;
-	font-weight: bold;
-	
+	font-weight: bold;	
 }
-
 
 .notice-lg .id { 
     color: #009FCC;
     font-size: 16px;
 	margin-bottom: 5px;
 	text-align: left;
-	font-weight: bold;
-	
+	font-weight: bold;	
 }
-
 
 .notice-lg>p {
 
@@ -375,13 +370,11 @@ ul li {
 	
 }
 
-
 .notice:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-left: 6px solid #20B2AA;
 	
 }
-
 
 .contr p{
 	
@@ -401,16 +394,12 @@ ul li {
 	padding: 10px;
 	padding-top: 4px;
 	margin-bottom: 20px;
-
 }
-
 
 .contr {
 
 	margin-bottom: 34px;
-
 }
-
 
 .contr h4{
 
@@ -418,8 +407,7 @@ ul li {
 	color: #787878;
 	text-align: left;
 	font-weight: bold;
-	margin-bottom: 30px;
-	
+	margin-bottom: 30px;	
 }
 
 .contr h5{
@@ -429,7 +417,6 @@ ul li {
 	text-align: center;
 	
 }
-
 
 .des {
 	
