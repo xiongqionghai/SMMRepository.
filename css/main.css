@@ -345,7 +345,6 @@ ul li {
     padding-bottom: 5px;
 }
 
-
 .notice-lg .name { 
     	color: #009FCC;
     	font-size: 18px;
@@ -381,9 +380,7 @@ ul li {
 	color: #787878;
 	font-size: 15px;
 	text-align: left;
-
 }
-
 
 .des h1 {
 
@@ -409,6 +406,7 @@ ul li {
 	font-weight: bold;
 	margin-bottom: 30px;	
 }
+
 
 .contr h5{
 
@@ -520,7 +518,6 @@ ul li {
 	
 	color:gray;
 	font-size: 20px;
-	
 	text-align: left;	
 }
 
@@ -532,11 +529,13 @@ ul li {
 }
 
 #cta-section {
+	
 	padding: 50px 50px 100px 80px;
 }
+
 .cta-btn {
-	margin-top: 60px;
 	
+	margin-top: 60px;	
 }
 
 .cta h1{
@@ -546,6 +545,7 @@ ul li {
 }
 
 .btn-default, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+	
 	-webkit-transition: all 0.6s ease-in-out;
 	-moz-transition: all 0.6s ease-in-out;
 	-o-transition: all 0.6s ease-in-out;
@@ -554,6 +554,7 @@ ul li {
 }
 
 .btn-lg {
+	
 	font-size: 1.3em;
 	padding: 10px 40px;
 	background-color:white;
@@ -562,22 +563,22 @@ ul li {
 }
 
 .rotate-box-info h2{
+	
 	color:#00CED1;
 	font-weight: bold;
 }
 
-
 /* ------------------------------------------------------------------------------
 	singlemodel Style
 -------------------------------------------------------------------------------*/
-
 a:hover,a:focus{
+	
  text-decoration: none;
  outline: none;
 }
 
 #accordion .panel{
-
+	
  box-shadow: none;
  border: 1px solid #f0f0f0;
  margin-bottom: 10px;
@@ -588,7 +589,7 @@ a:hover,a:focus{
  
 
 #accordion .panels{
- 
+	
  margin-left: auto;
  margin-right: auto;
  width:100%;
@@ -614,7 +615,6 @@ a:hover,a:focus{
 #accordion .panel-heading:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-
 
 #accordion .panel-headings:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -652,8 +652,7 @@ a:hover,a:focus{
  
   -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
-            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
-			
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);			
 }
 
 
@@ -679,15 +678,16 @@ a:hover,a:focus{
  border-radius: 5;
  margin-bottom: 10px;
  height: 50px;
- width: 30%;
+ width: 100%;
  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
  
- 
 }
 
+
 #accordion .panel-headingsbt{
+	
  padding: 0;
  border-radius: 5;
  border-left: 3px solid #AFEEEE;
@@ -703,6 +703,7 @@ a:hover,a:focus{
 }
 
 #accordion .panel-headingl{
+	
  padding: 0;
  border-radius: 5;
  border-left: 3px solid #009FCC;
@@ -714,8 +715,8 @@ a:hover,a:focus{
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
  
- 
 }
+
 
 #accordion .panel-headingsb{
  padding: 0;
@@ -731,6 +732,7 @@ a:hover,a:focus{
 
 }
 
+
 #accordion .panel-headingsu{
  padding: 0;
  border-left: 3px solid #CCEEFF;
@@ -740,23 +742,23 @@ a:hover,a:focus{
  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
- 
 }
 
 
 #accordion .panel-title {
 
-
 }
 
 #accordion .panel-title a{
- display: block;
- padding: 38px;
- font-size: 18px;
- font-weight: bold;
+	
+display: block;
+padding: 38px;
+font-size: 18px;
+font-weight: bold;
 text-align: left;
 background-color: #fff;
- transition: all 0.5s ease 0s;
+transition: all 0.5s ease 0s;
+	
 }
 
 #accordion .panel-titles a{
@@ -769,7 +771,6 @@ background-color: #fff;
  color:gray;
  transition: all 0.5s ease 0s;
 }
-
 
 #accordion .panel-titlesb a{
  display: block;
@@ -819,7 +820,6 @@ background-color: #fff;
 #accordion .body-content{
 	 margin-bottom: 15px;
 }
-
 
 #accordion .panel-body:after{
  content: "";
