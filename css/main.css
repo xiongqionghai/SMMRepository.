@@ -53,10 +53,10 @@ h5 {
 	text-transform: uppercase;
 }
 
+
 .btn:hover, .btn:focus {
 	background-color: #3d3d3d;
-	color: #C0C0C0;
-
+	color: #C0C0C0;	
 }
 
 
@@ -67,20 +67,45 @@ h5 {
 }
 
 
+.btn-xs {
+	
+	background-color: transparent;
+	border: 1px solid #e6e6e6;
+	color: #8a8a8a;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 10px;
+	margin-left: 20px; 
+	margin-top: 10px;
+	
+}
+
+
+.btn-xs:hover, .btn-xs:focus {
+	background-color: #515151;
+	color: #fff;
+}
+
+.btn-large:hover{
+
+	color: #C0C0C0;
+}
+
+
 .btn-large.an {
 	
-    border: 2px solid #FFFFFF;
+    border: 2px solid #AAAAAA;
 	padding: 15px 40px;
 	margin-right: 8px;
 	margin-bottom: 25px;
 	background-color: transparent; 
-	padding: 15px 30px;
+	
 }
 
 .btn-large.bn {
 
-	border: 2px solid #3bc492;
-	background-color: #3bc492;
+	border:;
+	background-color: #26A69A;
 	padding: 15px 40px;
 	margin-right: 8px;
 	margin-bottom: 25px;
@@ -98,10 +123,10 @@ h5 {
 
 .btn-large.tr {
 	
-	border: ;
-	background-color:  #3bc492; 
+	border: 2px solid #00CED1;
+	background-color: transparent; 
 	margin-right: 8px;
-	
+	color: #00CED1;
 
 }
 
@@ -337,29 +362,36 @@ ul li {
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
 }
 
+
 .notice-lg {
 	
     text-align:left;
-    padding-left: 10px;
+   
+	padding-left: 10px;
     font-size: large;
     padding-bottom: 5px;
 }
+
 
 .notice-lg .name { 
     	color: #009FCC;
     	font-size: 18px;
 	margin-bottom: 5px;
 	text-align: left;
-	font-weight: bold;	
+	font-weight: bold;
+	
 }
+
 
 .notice-lg .id { 
     color: #009FCC;
     font-size: 16px;
 	margin-bottom: 5px;
 	text-align: left;
-	font-weight: bold;	
+	font-weight: bold;
+	
 }
+
 
 .notice-lg>p {
 
@@ -369,18 +401,22 @@ ul li {
 	
 }
 
+
 .notice:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-left: 6px solid #20B2AA;
 	
 }
 
+
 .contr p{
 	
 	color: #787878;
 	font-size: 15px;
 	text-align: left;
+
 }
+
 
 .des h1 {
 
@@ -391,12 +427,16 @@ ul li {
 	padding: 10px;
 	padding-top: 4px;
 	margin-bottom: 20px;
+
 }
+
 
 .contr {
 
 	margin-bottom: 34px;
+
 }
+
 
 .contr h4{
 
@@ -404,9 +444,9 @@ ul li {
 	color: #787878;
 	text-align: left;
 	font-weight: bold;
-	margin-bottom: 30px;	
+	margin-bottom: 30px;
+	
 }
-
 
 .contr h5{
 
@@ -415,6 +455,7 @@ ul li {
 	text-align: center;
 	
 }
+
 
 .des {
 	
@@ -449,7 +490,7 @@ ul li {
 
 .contents {
 
-	margin-left: 30%;
+	margin-left: 35%;
 	margin-bottom: 10px;
 	border: 1px solid #fff;
 	width: 54px;
@@ -474,7 +515,7 @@ ul li {
 }
 
 .rows{
- margin-top: 100px;	
+ 	margin-top: 100px;	
 }
 
 .conForm h5 {
@@ -504,21 +545,21 @@ ul li {
 	margin: 7%;
 	
 }
-
 .conForm h3 {
 	
 	color:gray;
 	font-size: 18px;
-	margin-top: 30px;
+	margin-top: 24px;
     font-weight: normal;
 	text-align: left;
-	margin-bottom: 32px;
+	margin-bottom: 36px;
 }
 
 .conForm h1 {
 	
 	color:gray;
 	font-size: 20px;
+	
 	text-align: left;	
 }
 
@@ -532,11 +573,11 @@ ul li {
 #cta-section {
 	
 	padding: 50px 50px 100px 80px;
-}
 
+}
 .cta-btn {
+	margin-top: 60px;
 	
-	margin-top: 60px;	
 }
 
 .cta h1{
@@ -546,7 +587,6 @@ ul li {
 }
 
 .btn-default, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-	
 	-webkit-transition: all 0.6s ease-in-out;
 	-moz-transition: all 0.6s ease-in-out;
 	-o-transition: all 0.6s ease-in-out;
@@ -555,7 +595,6 @@ ul li {
 }
 
 .btn-lg {
-	
 	font-size: 1.3em;
 	padding: 10px 40px;
 	background-color:white;
@@ -564,22 +603,22 @@ ul li {
 }
 
 .rotate-box-info h2{
-	
 	color:#00CED1;
 	font-weight: bold;
 }
 
+
 /* ------------------------------------------------------------------------------
 	singlemodel Style
 -------------------------------------------------------------------------------*/
+
 a:hover,a:focus{
-	
  text-decoration: none;
  outline: none;
 }
 
 #accordion .panel{
-	
+
  box-shadow: none;
  border: 1px solid #f0f0f0;
  margin-bottom: 10px;
@@ -588,9 +627,8 @@ a:hover,a:focus{
  width:100%;
 }
  
-
 #accordion .panels{
-	
+ 
  margin-left: auto;
  margin-right: auto;
  width:100%;
@@ -617,9 +655,11 @@ a:hover,a:focus{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+
 #accordion .panel-headings:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
 
 #accordion .panel-headingsb:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
@@ -632,6 +672,7 @@ a:hover,a:focus{
 #accordion .panel-headingl:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
+
 
 #accordion .panel-headingsu:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
@@ -651,8 +692,10 @@ a:hover,a:focus{
  
   -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
-            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);			
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+			
 }
+
 
 #accordion .panel-heading{
 
@@ -681,11 +724,10 @@ a:hover,a:focus{
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
  
+ 
 }
 
-
 #accordion .panel-headingsbt{
-	
  padding: 0;
  border-radius: 5;
  border-left: 3px solid #AFEEEE;
@@ -701,7 +743,6 @@ a:hover,a:focus{
 }
 
 #accordion .panel-headingl{
-	
  padding: 0;
  border-radius: 5;
  border-left: 3px solid #009FCC;
@@ -713,8 +754,8 @@ a:hover,a:focus{
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
  
+ 
 }
-
 
 #accordion .panel-headingsb{
  padding: 0;
@@ -730,7 +771,6 @@ a:hover,a:focus{
 
 }
 
-
 #accordion .panel-headingsu{
  padding: 0;
  border-left: 3px solid #CCEEFF;
@@ -740,23 +780,23 @@ a:hover,a:focus{
  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+ 
 }
 
 
 #accordion .panel-title {
 
+
 }
 
 #accordion .panel-title a{
-	
-display: block;
-padding: 38px;
-font-size: 18px;
-font-weight: bold;
+ display: block;
+ padding: 38px;
+ font-size: 18px;
+ font-weight: bold;
 text-align: left;
 background-color: #fff;
-transition: all 0.5s ease 0s;
-	
+ transition: all 0.5s ease 0s;
 }
 
 #accordion .panel-titles a{
@@ -769,6 +809,7 @@ transition: all 0.5s ease 0s;
  color:gray;
  transition: all 0.5s ease 0s;
 }
+
 
 #accordion .panel-titlesb a{
  display: block;
@@ -819,12 +860,14 @@ background-color: #fff;
 	 margin-bottom: 15px;
 }
 
+
 #accordion .panel-body:after{
  content: "";
 
 }
 
 table { 
+
   width: 100%; 
   border-collapse: collapse; 
 }
