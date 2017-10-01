@@ -504,6 +504,7 @@ ul li {
 	margin: 7%;
 	
 }
+
 .conForm h3 {
 	
 	color:gray;
@@ -620,7 +621,6 @@ a:hover,a:focus{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-
 #accordion .panel-headingsb:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
@@ -632,7 +632,6 @@ a:hover,a:focus{
 #accordion .panel-headingl:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
-
 
 #accordion .panel-headingsu:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
@@ -654,7 +653,6 @@ a:hover,a:focus{
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);			
 }
-
 
 #accordion .panel-heading{
 
