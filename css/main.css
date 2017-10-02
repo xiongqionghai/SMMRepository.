@@ -81,7 +81,10 @@ h5 {
 }
 
 .btn-large:hover{
-	color: #C0C0C0;
+	background-color: #4ec99c;
+	color: #C0C0C0;	
+}
+
 }
 
 .btn-large.an {
