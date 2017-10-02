@@ -6,6 +6,6 @@ This repository can be seen as open platform for presenting and sharing multiple
 
 * Browsing diverse data models in more interactive way
 * Searching models, which implemented by using List.js (a JavaScript library), more information see [List.js](http://listjs.com/)
-* Downloading XML or JSON files within data models, but only works in _**Chrome**_ and _**Firefox**, not _**IE**_
+* Downloading XML or JSON files within data models, but only works in _**Chrome**_ and _**Firefox**_, not _**IE**_
 * New data models could be contributed by pull request
 
