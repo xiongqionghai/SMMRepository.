@@ -4,24 +4,8 @@ This repository can be seen as open platform for presenting and sharing multiple
 
 ### Features
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
+* Browsing diverse data models in more interactive way
+* Searching models, which implemented by using List.js (a JavaScript library), more information see [List.js](http://listjs.com/)
+* Downloading XML or JSON files within data models, but only works in _**Chrome**_ and _**Firefox**, not _**IE**_
+* New data models could be contributed by pull request
 
