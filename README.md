@@ -2,7 +2,7 @@
 
 This repository can be seen as open platform for presenting and sharing multiple data models of IoT devices, such as LWM2M, UCI model as well as other non-standard models. Moreover, it helps enterprises (organizations) to manage data models for objects and demonstrate them publicly in more appealing way.
 
-### Markdown
+### Features
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -24,5 +24,4 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
