@@ -773,7 +773,11 @@ a:hover,a:focus{
 
 #accordion .panel-body:after{
  	content: "";
+}
 
+#accordion .downloadButt {
+	text-align: right; 
+	margin-bottom: 10px;
 }
 
 table { 
