@@ -704,7 +704,7 @@ a:hover,a:focus{
 
 #accordion .panel-title a{
  	display: block;
- 	padding: 38px;
+ 	padding: 32px;
  	font-size: 18px;
  	font-weight: bold;
 	text-align: left;
@@ -736,7 +736,7 @@ a:hover,a:focus{
 
 #accordion .panel-titlel a{
  	display: block;
-	padding: 30px;
+	padding: 26px;
  	font-size: 16px;
  	font-weight: bold;
 	text-align: left;
